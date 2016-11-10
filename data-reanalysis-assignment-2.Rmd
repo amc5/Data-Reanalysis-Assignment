@@ -15,24 +15,27 @@ knitr::opts_chunk$set(
 ```
 
 #Galis et al. (2004) - "Fast running restricts evolutionary change of the vetebral column in mammals"
-##data analysis done by author Tom J. M. Van Dooren
+###Galis, F., Carrier, D. R., Van Alphen, J., Van Der Mije, S. D., Van Dooren, T. J., Metz, J. A., & ten Broek, C. M. (2014). Fast running restricts evolutionary change of the vertebral column in mammals. Proceedings of the National Academy of Sciences, 111(31), 11401-11406.
+##Data analysis done by Tom J. M. Van Dooren
 
-###Galis et al. investigae the conservation of mammalian presacral vetebrae and examine whether or not there is a correlation with running speed.  Authors hypothesize that biomechanical problems associated with initial homeotic transformations result in the strong conservation of number of presacral vertebrae in fast mammals, moreso than in slow mammals, because quickness and agility would be hampered by incomplete and/or asymmetric fusions of lumbar vertebrae to the sacrum. To test this hypothesis, authors counted presacral vertebral columns of a variety of 802 individuals from 5 different Families, assigned a running classification speed to each species, and conducted statistical analyses based on these counts (described below). Results of the analysis support the hypothesis that developmental and biomechanical constraints limit mammalian presacral vertebrae evolution. Slow taxa were more likely to exhibit presacral variation.
-###Problems I have with this paper:
-* Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (ie: canis and procyon)?
+###Galis et al. investigae the conservation of mammalian presacral vetebrae and examine whether or not there is a correlation between strong conservation and running speed.  Authors hypothesize that biomechanical problems associated with initial homeotic transformations result in the strong conservation of number of presacral vertebrae in fast mammals, moreso than in slow mammals, because quickness and agility would be hampered by incomplete and/or asymmetric fusions of lumbar vertebrae to the sacrum. 
+###Methods: To test this hypothesis, authors counted presacral vertebral columns of 802 individuals from 82 species within 5 Families. They then assigned a running classification speed to each species based on references in the literature. The authors then conducted the following statistical analyses based on these counts. Authors analyzed contingency tables of taxa of different speeds and presacral counts using Fisher's exact tests and reported P-values (details below).  Within-species variation of groups according to speed was calculated by bootstrapping 95% confidence intervals of the variance 1000 times.  These results were then depicted in a figure. The authors mention an additional comparison using linear models, but they do not mention this in the paper nor do they depict it, so I did not conduct this analysis.
+###Results: The analyses support the hypothesis that developmental and biomechanical constraints limit mammalian presacral vertebrae evolution. Fast mammals had almost no variation in presacral vertebral count. Most significant differences between normal and abnormal presacral counts occur between fast and slow taxa. The taxa with the highest frequency of abnormal vertebrae move slowly and cautiously, supporting the hypothesis that transitional/abnormal vertebrae interfere with quick and agile movements. Most fast species had no intraspecific variation in presacral count, variation is more common in slow groups.
 
 ##Data analysis replicated:
-* Fisher's exact tests between and within Families to show whether differences in normal and abnormal presacral counts were significant based on speed
+* In this assingment I will replicate the Fisher's exact tests and p-value comparisons and the variance bootstrapping with 95%CI.  I also reconstruct Figure 4 of the paper, which is based on the bootstrappin analysis.
+
 ```{r}
 #Packages used for data analysis
 library(curl)
 library(dplyr)
 library(ggplot2)
-library(boot)
-#load data
+
+#Load in data from Github
 f <- curl("https://raw.githubusercontent.com/amc5/Data-Reanalysis-Assignment/master/fastslowmammals.csv")
 d <- read.csv(f, header = TRUE, stringsAsFactors = FALSE) #read in data
 head(d) #checking data
+#d is the original species data set that I received from the author
 ```
 
 ###This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent from each other.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
@@ -125,7 +128,7 @@ p.adjust(y$p.value, method = "holm", n=6) #p=0.408, (0.54)
 ###The authors reported six p-values as insignificant.  I calculated different p-values for each of these six insignificant, reported values.  My calculations result in the same p-values as being significant that they report.  I reached out to the first author, Galis, about the discrepancy between our results.  She did not comment on the p-values, but she did respond that the authors are continuing to accumulate more data and work with their data set.
 ###The results of this test reveal if the differences between speeds of taxa are significant for frequency of abnormal presacral counts and/or the presence of presacral transitional vertebrae.
 
-#Working with species specific data
+#Working with species specific data for within-species variance comparison and bootstrapping
 ```{r} 
 #manipulate raw data to get rid of NAs in Presacral count column
 summary(d$Presacral.No.) #identifies how many rows contain NA for presacral count
@@ -136,194 +139,49 @@ head(d)
 ```
 
 #Create functions for variance and confidence interval bootstrapping
+###Below I create a mega function thatI have heavily annotated to explain my step-by-step process
 ```{r}
-#Function created for variance and 95% confidence intervals for each species with variation in presacral count
 
-#Try using the builtin bootstrapping function in R
-library(boot)
-betfun <- function(x, formula){
-  b = as.data.frame(x)
-  s = sample(x, nrow(b), replace = TRUE)
-  v <- sum((s - mean(s))^2)/(length(s) - 1)
-  return(v)
-}
-bootbet <- boot(x, statistic = betfun, R=1000)
-bootbet
-
-#Function 
-varCI <- function(x,n=1000){
-  v <- NULL
-  s <- NULL
-  b <- as.data.frame(x) #this loads in presacral number data for specific species
-  for(i in 1:n){
-    s <- sample(x, nrow(b), replace = TRUE) #sample
-    #print(s)
-    v <- sum((s - mean(s))^2)/(length(s) - 1) #Variance of a sample
-    return(v)
+whole_thing <- function(df, n){ #this function will act on the specified dataframe (will be d), n times (will be 1000)
+  CI5 <- c() #creates empty vector for 5% CI that will get filled in at bottom of function depending on the results of the function
+  CI95 <- c() #creates empty vector for 95% CI that will get filled in at bottom of function depending on the results of the function
+  var <- c() #creates empty vector for variance that will get filled in at bottom of function depending on results of the function
+  number <- c() #creates empty vector for number of observations that will get filled in at bottom of function depending on the species analyzed
+  speed <- c() #creates empty vector for speed classification (slow, half, or fast depending on author's designation in original dataframe) that will get filled in at bottom of function depending on the species
+  species <- unique(df$Species) #This splits up the original dataframe by pulling each species by name "Species" only once
+  for(k in 1:length(species)){ 
+    v <- NULL #Nulls out variable v each time the function is run for a different species
+    s <- NULL #Nulls out variable s each time the function is run for a different species
+    singleSpdat <- df%>%filter(Species == species[k]) #this creates a mini data frame made up of the individual species being anaylyzed at a time that only contains the data on one species at a time
+    speed[k] <- singleSpdat$Running_Speed[1] #this creates a running speed column in the new data frame for the species being analyzed based on the running speed designated for the first individual in the species (all individuals in each species have the same running speed)
+    number[k] <- nrow(singleSpdat) #this creates a column in the new dataframe that is the number of rows per species, or the number of observances per species
+    for(i in 1:n){
+         s <-sample(singleSpdat$Presacral.No., nrow(singleSpdat), replace = TRUE) #creates variable for the random sampling of each species' presacral vertebrae data, it samples from the number of observances for each species, with replacement so that each value is put back in the bin for each sampling event 
+         v[i] <- sum((s - mean(s, na.rm=T))^2)/(length(s) - 1) #equation to calculate the variance of the random sampling of each species' presacral vertebral column count
+    }
+    var[k] <- mean(v) #creates a single variance for each species based on the mean of the sample of variances
+    q <- quantile(v, c(0.05, 0.95), na.rm=TRUE) #creates 95% confidence intervals for each variance
+    CI5[k] <- q[1] #creates a column out of the first value in q (which is the 5% CI)
+    CI95[k] <- q[2] #creates a column out of the first value in q (which is the 95% CI)
   }
-  #print(v)
-  q <- quantile(v, c(0.05, 0.95), na.rm=TRUE) #CI
-  #print(q)
-  #return(q)
+return(data.frame(species, var, CI95, CI5, number, speed)) #tells the function to return a new dataframe with the species, variance, CIs, number of observations, and speed of each species the function is run on
 }
+finish <- whole_thing(d,1000) #telsl the function to run on the original ddataframe from the authors, 1000 times
+View(finish) #allows me to see the new dataframe in a different window
+```
+#### I REALLY understand functions now!! :) 
 
-ci_var <- function(x,n=1000){
-  v <- NULL
-  s <- NULL
-  b <- as.data.frame(x)
-  for(i in 1:n){
-    s <- sample(x, nrow(b), replace = TRUE) #sample
-    v[i] <- sum((s - mean(s))^2)/(length(s) - 1) #Variance of a sample
-  }
-  q <- quantile(v, c(0.05, 0.95), na.rm=TRUE) 
-}
+##Figure 4 Reconstruction
+```{r}
+#I use ggplot to construct a graph comparing within species variance with number of observation per species, and then identifying the species based on running speed classification
+
+figure4 <- ggplot(data = finish, aes(x=number, y=var, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + geom_pointrange(aes(ymin=CI5, ymax=CI95)) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)") + scale_y_continuous(breaks=c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+figure4 #command to recreate the figure from the paper
+#14 removed because they have NA for var and CI cuz 1 observation
 ```
 
-###Assigning variables to each species that has a variance =/= 0.  I use package{dplyr} to call rows by species name and then call only the column for Presacral Vertebrae Number.  I checked to make sure that no two species had the same species name, so each variable is unique. Next, I will run each of these variables in the function created for within species variance and 95% confidence intervals.
-```{r}
-#Tachyglossus aculeatus
-T_a <- filter(d, Species=="aculeatus") #this filters data to only look at rows with Species name "aculeatus"
-T_a <- T_a[ , 7] #this calls only column 7, which is Presacral.No.
-rT_a <- varCI(T_a) #runs variance function on Presacral data for this species
-rT_a #returns variance
-ta <- ci_var(T_a) #runs confidence interval function on Presacral data for this species
-ta #returns confidence intervals
-#Zaglossus bruijni
-Z_b <- filter(d, Species == "bruijni")
-Z_b <- Z_b[ , 7]
-rZ_b <- varCI(Z_b)
-rZ_b
-zb <- ci_var(Z_b)
-zb
-#Orycteropus afer
-O_a <- filter(d, Species == "afer")
-O_a <- O_a[ , 7]
-rO_a <- varCI(O_a)
-rO_a
-oa <- ci_var(O_a)
-#Elephas maximus
-E_m <- filter(d, Species == "maximus")
-E_m <- E_m[ , 7]
-rE_m <- varCI(E_m)
-rE_m
-em <- ci_var(E_m)
-#Loxodonta africana
-L_a <- filter(d, Species == "africana") 
-L_a <- L_a [ , 7]
-rL_a <- varCI(L_a)
-rL_a
-la <- ci_var(L_a)
-#Leptailurus serval
-L_s <- filter(d, Species == "serval")
-L_s <- L_s[ , 7]
-rL_s <- varCI(L_s)
-rL_s
-ls <- ci_var(L_s)
-#Meles meles
-M_m <- filter(d, Species == "meles")
-M_m <- M_m[ , 7]
-rM_m <- varCI(M_m)
-rM_m
-mm <- ci_var(M_m)
-#Mustela nivalis
-M_n <- filter(d, Species == "nivalis")
-M_n <- M_n[ , 7]
-rM_n <- varCI(M_n)
-rM_n
-mn <- ci_var(M_n)
-#Mustela erminea
-M_e <- filter(d, Species == "erminea")
-M_e <- M_e[ , 7]
-rM_e <- varCI(M_e)
-rM_e
-me <- ci_var(M_e)
-#Martes foina
-M_f <- filter(d, Species == "foina")
-M_f <- M_f[ , 7]
-rM_f <- varCI(M_f)
-rM_f
-mf <- ci_var(M_f)
-#Procyon lotor
-P_l <- filter(d, Species == "lotor")
-P_l <- P_l[ , 7]
-rP_l <- varCI(P_l)
-rP_l
-pl <- ci_var(P_l)
-#Procyon cancrivorus
-P_c <- filter(d, Species == "cancrivorus")
-P_c <- P_c[ , 7]
-rP_c <- varCI(P_c)
-rP_c
-pc <- ci_var(P_c)
-#Potamochoerus porcus
-P_p <- filter(d, Species == "porcus")
-P_p <- P_p[ , 7]
-rP_p <- varCI(P_p)
-rP_p
-pp <- ci_var(P_p)
-#Phacochoerus africanus
-P_a <- filter(d, Species == "africanus")
-P_a <- P_a[ , 7]
-rP_a <- varCI(P_a)
-rP_a
-pa <- ci_var(P_a)
-#Sus scrofa
-S_s <- filter(d, Species == "scrofa")
-S_s <- S_s[ , 7]
-rS_s <- varCI(S_s)
-rS_s
-ss <- ci_var(S_s)
-#Hippopotamus amphibus
-H_a <- filter(d, Species == "amphibius")
-H_a <- H_a[ , 7]
-rH_a <- varCI(H_a)
-rH_a
-ha <- ci_var(H_a)
-#Hexaprotodon liberiensis
-H_l <- filter(d, Species == "liberiensis")
-H_l <- H_l[ , 7]
-rH_l <- varCI(H_l)
-rH_l
-hl <- ci_var(H_l)
-#Hyemoschus aquaticus
-Hy_a <- filter(d, Species == "aquaticus")
-Hy_a <- Hy_a[ , 7]
-rHy_a <- varCI(Hy_a)
-rHy_a
-hya <- ci_var(Hy_a)
-#Tragulus kanchil
-T_k <- filter(d, Species == "kanchil")
-T_k <- T_k[ , 7]
-rT_k <- varCI(T_k)
-rT_k
-tk <- ci_var(T_k)
-#Tragulus javanicus
-T_j <- filter(d, Species == "javanicus")
-T_j <- T_j[ , 7]
-rT_j <- varCI(T_j)
-rT_j
-tj <- ci_var(T_j)
-#Saiga tatarica
-S_t <- filter(d, Species == "tatarica")
-S_t <- S_t[ , 7]
-rS_t <- varCI(S_t)
-rS_t
-st <- ci_var(S_t)
-#Ovibus moschatus
-O_m <- filter(d, Species == "moschatus")
-O_m <- O_m[ , 7]
-rO_m <- varCI(O_m)
-rO_m
-om <- ci_var(O_m)
-#Cephalophus dorsalis
-C_d <- filter(d, Species == "dorsalis")
-C_d <- C_d[ , 7]
-rC_d <- varCI(C_d)
-rC_d
-cd <- ci_var(C_d)
-```
-
-##Figure 4 reconstruction
+###Original Figure 4 from article
+<img src="img/Gallis2004img.jpg" width="450px"/> 
 
 ###Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
 ###Shows within species variation.  Fast mammals have lowest variation, slow mammals have highest variation.
@@ -377,14 +235,16 @@ View(employ) #opens data frame in new window
 
 limits <- aes(ymin= CI5, ymax = CI95) #assigns error bars based on the confidence intervals of each species
 
-figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + ylim(0, 1) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)")
-figure4 #command to recreate the figure from the paper
+figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)") + scale_y_continuous(breaks=c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+figure4
 ```
 
-<img src="img/"C:\Users\Allison\Desktop\data_reconstruction_project\Galis2004img.jpg"" width="200px"/>
+
 
 ###My Figure 4 looks different from that published in the paper for a few reasons: 
 * I excluded the species with no variance in their presacral counts
+* My x-axis only goes to right above 35 because, with excluding the 0 variance species, none of my counts exceed 35
+* The scale of my y-axis is a little bit different (ending at 0.8 instead of 1.0) because I wanted to focus in a little bit, since none of my confidence intervals exceed 0.8 (unlike the author's) 
 * Due to the random nature of bootstrapping, the CIs may shift slightly when run
 * I used a completely different method for data transformation and random sampling than the authors
 * Although I only included species in my analysis that have variation in their presacral vertebrae count, 3 species on my plot appear to have variance=0.  This is due to the bootstrapping and 1000 times sampling randomization.
@@ -392,3 +252,4 @@ figure4 #command to recreate the figure from the paper
 ##Having evaluated this paper and reconstructed their data analysis, I would not have used the same statistical methods as the authors for the following reasons:
 * Bootstrapping is by definition according to Crowley (page 62) a resampling of the mean.  Yet the authors specify that they do this of the variance.  I realize that they use bootstrapping because their sample sizes are small (between 1 and 40), but it seems to me that they could have a) aimed for a higher number of measurements, b) used counts and measurements from different data sources, or c) simply reported what they had.
 * Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication.  
+* Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (ie: canis and procyon)?
