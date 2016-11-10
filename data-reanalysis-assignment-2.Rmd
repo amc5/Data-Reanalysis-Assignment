@@ -195,10 +195,10 @@ figure4 #command to recreate the figure from the paper
 ```
 
 ###Original Figure 4 from article
-<img src="img/Gallis2004img.jpg" width="450px"/> 
-#####I am not sure if this will successfully load the image in my Rmd.
+<img src="img/Galis2004img.jpg"/> 
+
  
-###My Figure 4 looks different from that published in the paper for a few reasons:
+###My Figure 4 looks slightly different from that published in the paper for a few reasons:
 * The scale of my y-axis is a little bit different (ending at 0.8 instead of 1.0) because I wanted to focus in a little bit, since none of my confidence intervals exceed 0.8 (unlike the author's).
 * Bootstrapping confidence intervals of the mean of variances can provide slightly different numbers because it is randomly sampling 1000 times, a little bit of variation can be expected.
 * It appears that we have differences in the number of observances for a few species. I think that this is because I removed the rows with NAs in the presacral count column from my dataset. I think the authors kept these rows for the purpose of the count of observances, but did not use their information for the analysis of variances and confidence intervals. The counts are only off by 1, it appears.
