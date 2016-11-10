@@ -2,16 +2,26 @@
 title: "data-reanalysis-assignment"
 output: html_document
 ---
----
-title: "data-reconstruction-project"
-output: html_document
----
+
 #Galis et al. (2004) - "Fast running restricts evolutionary change of the vetebral column in mammals"
 ##data analysis done by author Tom J. M. Van Dooren
 ###Galis et al. investigae the conservation of mammalian presacral vetebrae and examine whether or not there is a correlation with running speed.  Authors hypothesize that biomechanical problems associated with initial homeotic transformations result in the strong conservation of number of presacral vertebrae in fast mammals, moreso than in slow mammals, because quickness and agility would be hampered by incomplete and/or asymmetric fusions of lumbar vertebrae to the sacrum. To test this hypothesis, authors counted presacral vertebral columns of a variety of 802 individuals from 5 different Families, assigned a running classification speed to each species, and conducted statistical analyses based on these counts (described below). Results of the analysis support the hypothesis that developmental and biomechanical constraints limit mammalian presacral vertebrae evolution. Slow taxa were more likely to exhibit presacral variation.
 ###Problems I have with this paper:
 * Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (ie: canis and procyon)?
 
+##Data analysis replicated:
+* Fisher's exact tests between and within Families to show whether differences in normal and abnormal presacral counts were significant based on speed
+```{r}
+#Packages used for data analysis
+library(curl)
+library(dplyr)
+library(ggplot2)
+library(boot)
+#load data
+f <- curl("https://raw.githubusercontent.com/amc5/Data-Reanalysis-Assignment/master/fastslowmammals.csv")
+d <- read.csv(f, header = TRUE, stringsAsFactors = FALSE) #read in data
+head(d) #checking data
+```
 
 #This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent from each other.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
 ##My methods for running the Fisher's exact tests:
@@ -59,7 +69,7 @@ fisher.test(x) #pval=0.1481 (0.24)
 x<- as.matrix(c(38, 13, 63, 45, 17, 16, 15, 34)) #this will be the comparison between mulitple taxa (carn,art,mono,afro)
 dim(x)<- c(2, 4)
 x
-y <-fisher.test(x) #p=0.0001289 instead of 0.01
+fisher.test(x) #p=0.0001289 instead of 0.01
 ```
 
 ##Authors adjusted the p-values of the following comparisons using the Holm-Bonferroni adjustment. These are posthoc tests of the above comparison between four families (Carnivora, Artiodactyla, Afrotheria, and Monotremata).  The purpose of this posthoc comparison is to examine that specific experiment for relationships within the first analysis. A Holm-Bonferoni adjustment was used because adjusts the criteria for rejecting the null hypothesis, making it more difficult to get a Type I error (incorrect rejection of a true null hypothesis).
@@ -103,20 +113,18 @@ p.adjust(y$p.value, method = "holm", n=6) #p=0.408, (0.54)
 ##The authors reported six p-values as insignificant.  I calculated different p-values for each of these six insignificant, reported values.  My calculations result in the same p-values as being significant that they report.  I reached out to the first author, Galis, about the discrepancy between our results.  She did not comment on the p-values, but she did respond that the authors are continuing to accumulate more data and work with their data set.
 ##The results of this test reveal if the differences between speeds of taxa are significant for frequency of abnormal presacral counts and/or the presence of presacral transitional vertebrae.
 
-#Species specific data
+#Working with species specific data
 ```{r} 
-file.choose()
-d <- read.csv("fastslowmammals.csv", header = TRUE, stringsAsFactors = FALSE) #read in data
-head(d) #checking data
+#manipulate raw data to get rid of NAs in Presacral count column
 summary(d$Presacral.No.) #identifies how many rows contain NA for presacral count
 d[is.na(d$Presacral.No.),] #prints rows with NA for presacral count
 d <- d[!is.na(d$Presacral.No.),] #removes NA presacral count rows from data
 summary(d$Presacral.No.)
-view(d) #this allows me to view my data, now without NAs, so I know which rows to call for each species
+head(d)
 ```
 
 ```{r}
-#Function created for variance and 95% confidence intervals for each species with variation in presacral count.
+#Function created for variance and 95% confidence intervals for each species with variation in presacral count
 
 #Try using the builtin bootstrapping function in R
 library(boot)
@@ -126,7 +134,7 @@ betfun <- function(x, formula){
   v <- sum((s - mean(s))^2)/(length(s) - 1)
   return(v)
 }
-bootbet <- boot(T_a, statistic = betfun, R=1000)
+bootbet <- boot(x, statistic = betfun, R=1000)
 bootbet
 
 #Function 
@@ -160,7 +168,6 @@ ci_var <- function(x,n=1000){
 
 #Assigning variables to each species that has a variance =/= 0.  I use package{dplyr} to call rows by species name and then call only the column for Presacral Vertebrae Number.  I checked to make sure that no two species had the same species name, so each variable is unique. Next, I will run each of these variables in the function created for within species variance and 95% confidence intervals.
 ```{r}
-library(dplyr)
 #Tachyglossus aculeatus
 T_a <- filter(d, Species=="aculeatus") #this filters data to only look at rows with Species name "aculeatus"
 T_a <- T_a[ , 7] #this calls only column 7, which is Presacral.No.
@@ -303,10 +310,6 @@ rC_d
 cd <- ci_var(C_d)
 ```
 
-```{r}
-library(ggplot2) #load in ggplot for use in graph making
-```
-
 #Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
 ```{r}
   
@@ -345,7 +348,7 @@ employ <- data.frame(species, variance, speed, numobs)
 employ5 <- c()
 employ95 <- c()
 
-for (i in 1:length(ci)){
+for (i in 1:length(ci)){ #assigns confidence interval values to variables
   employ5[i]<- ci[2*i-1] 
   employ95[i] <- ci[2*i]
 }
@@ -353,12 +356,13 @@ for (i in 1:length(ci)){
 employ$CI5 <- employ5[1:23] #adds columns for 5 and 95 % confidence intervals to the data frame
 employ$CI95 <- employ95[1:23]
 employ #final data frame to create graph
-View(employ)
+View(employ) #opens data frame in new window
 
 limits <- aes(ymin= CI5, ymax = CI95) #assigns error bars based on the confidence intervals of each species
 
 figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + ylim(0, 1) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)")
-figure4
+figure4 #command to recreate the figure from the paper
+
 ```
 #My Figure 4 looks different from that published in the paper for a few reasons:
 * I excluded the species with no variance in their presacral counts
@@ -371,5 +375,4 @@ figure4
 * Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication.  
 ```{r}
 library(nlme)
-?gls
 gls(lm, employ$speed ~ employ$numobs)
