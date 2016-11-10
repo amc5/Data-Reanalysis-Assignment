@@ -2,6 +2,17 @@
 title: "data-reanalysis-assignment"
 output: html_document
 ---
+```{r}
+knitr::opts_chunk$set(
+    echo = TRUE,
+    warning = FALSE,
+    comment = "##",
+    prompt = TRUE,
+    tidy = TRUE,
+    tidy.opts = list(width.cutoff = 75),
+    fig.path = "img/"
+)
+```
 
 #Galis et al. (2004) - "Fast running restricts evolutionary change of the vetebral column in mammals"
 ##data analysis done by author Tom J. M. Van Dooren
@@ -379,6 +390,3 @@ figure4 #command to recreate the figure from the paper
 ##Having evaluated this paper and reconstructed their data analysis, I would not have used the same statistical methods as the authors for the following reasons:
 * Bootstrapping is by definition according to Crowley (page 62) a resampling of the mean.  Yet the authors specify that they do this of the variance.  I realize that they use bootstrapping because their sample sizes are small (between 1 and 40), but it seems to me that they could have a) aimed for a higher number of measurements, b) used counts and measurements from different data sources, or c) simply reported what they had.
 * Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication.  
-```{r}
-library(nlme)
-gls(lm, employ$speed ~ employ$numobs)
