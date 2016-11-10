@@ -23,7 +23,7 @@ d <- read.csv(f, header = TRUE, stringsAsFactors = FALSE) #read in data
 head(d) #checking data
 ```
 
-#This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent from each other.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
+###This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent from each other.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
 ##My methods for running the Fisher's exact tests:
 * Create matrix of contingency table of count of normal vertebrae and abnormal vertebrae of each speed classification (whichever is called for for the specific test)
 * Create the matrix by hand for each test because the Excel tables from the supplementary data only provided the raw genera data.  Therefore, the totals of normal and abnormal presacral vertebrae counts had to be tallied and entered by hand in R.
@@ -72,7 +72,7 @@ x
 fisher.test(x) #p=0.0001289 instead of 0.01
 ```
 
-##Authors adjusted the p-values of the following comparisons using the Holm-Bonferroni adjustment. These are posthoc tests of the above comparison between four families (Carnivora, Artiodactyla, Afrotheria, and Monotremata).  The purpose of this posthoc comparison is to examine that specific experiment for relationships within the first analysis. A Holm-Bonferoni adjustment was used because adjusts the criteria for rejecting the null hypothesis, making it more difficult to get a Type I error (incorrect rejection of a true null hypothesis).
+###Authors adjusted the p-values of the following comparisons using the Holm-Bonferroni adjustment. These are posthoc tests of the above comparison between four families (Carnivora, Artiodactyla, Afrotheria, and Monotremata).  The purpose of this posthoc comparison is to examine that specific experiment for relationships within the first analysis. A Holm-Bonferoni adjustment was used because adjusts the criteria for rejecting the null hypothesis, making it more difficult to get a Type I error (incorrect rejection of a true null hypothesis).
 ```{r}
 #Posthoc comparison of slow Carnivora vs slow Artiodactyla
 x <- as.matrix(c(38,  13, 68, 45))
@@ -110,8 +110,8 @@ dim(x) <- c(2,2)
 y<-fisher.test(x)
 p.adjust(y$p.value, method = "holm", n=6) #p=0.408, (0.54)
 ```
-##The authors reported six p-values as insignificant.  I calculated different p-values for each of these six insignificant, reported values.  My calculations result in the same p-values as being significant that they report.  I reached out to the first author, Galis, about the discrepancy between our results.  She did not comment on the p-values, but she did respond that the authors are continuing to accumulate more data and work with their data set.
-##The results of this test reveal if the differences between speeds of taxa are significant for frequency of abnormal presacral counts and/or the presence of presacral transitional vertebrae.
+###The authors reported six p-values as insignificant.  I calculated different p-values for each of these six insignificant, reported values.  My calculations result in the same p-values as being significant that they report.  I reached out to the first author, Galis, about the discrepancy between our results.  She did not comment on the p-values, but she did respond that the authors are continuing to accumulate more data and work with their data set.
+###The results of this test reveal if the differences between speeds of taxa are significant for frequency of abnormal presacral counts and/or the presence of presacral transitional vertebrae.
 
 #Working with species specific data
 ```{r} 
@@ -123,6 +123,7 @@ summary(d$Presacral.No.)
 head(d)
 ```
 
+#Create functions for variance and confidence interval bootstrapping
 ```{r}
 #Function created for variance and 95% confidence intervals for each species with variation in presacral count
 
@@ -166,7 +167,7 @@ ci_var <- function(x,n=1000){
 }
 ```
 
-#Assigning variables to each species that has a variance =/= 0.  I use package{dplyr} to call rows by species name and then call only the column for Presacral Vertebrae Number.  I checked to make sure that no two species had the same species name, so each variable is unique. Next, I will run each of these variables in the function created for within species variance and 95% confidence intervals.
+###Assigning variables to each species that has a variance =/= 0.  I use package{dplyr} to call rows by species name and then call only the column for Presacral Vertebrae Number.  I checked to make sure that no two species had the same species name, so each variable is unique. Next, I will run each of these variables in the function created for within species variance and 95% confidence intervals.
 ```{r}
 #Tachyglossus aculeatus
 T_a <- filter(d, Species=="aculeatus") #this filters data to only look at rows with Species name "aculeatus"
@@ -310,7 +311,9 @@ rC_d
 cd <- ci_var(C_d)
 ```
 
-#Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
+##Figure 4 reconstruction
+
+###Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
 ```{r}
   
 #Creates a vector of the species names that will be included for the analysis of Figure 4.  These area the species that have variance in the number of presacral vertebrae.
@@ -348,7 +351,8 @@ employ <- data.frame(species, variance, speed, numobs)
 employ5 <- c()
 employ95 <- c()
 
-for (i in 1:length(ci)){ #assigns confidence interval values to variables
+#assigns confidence interval values to variables
+for (i in 1:length(ci)){ 
   employ5[i]<- ci[2*i-1] 
   employ95[i] <- ci[2*i]
 }
@@ -364,13 +368,13 @@ figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_
 figure4 #command to recreate the figure from the paper
 
 ```
-#My Figure 4 looks different from that published in the paper for a few reasons:
+###My Figure 4 looks different from that published in the paper for a few reasons:
 * I excluded the species with no variance in their presacral counts
 * Due to the random nature of bootstrapping, the CIs may shift slightly when run
 * I used a completely different method for data transformation and random sampling than the authors
 * Although I only included species in my analysis that have variation in their presacral vertebrae count, 3 species on my plot appear to have variance=0.  This is due to the bootstrapping and 1000 times sampling randomization.
 
-#Having evaluated this paper and reconstructed their data analysis, I would not have used the same statistical methods as the authors for the following reasons:
+##Having evaluated this paper and reconstructed their data analysis, I would not have used the same statistical methods as the authors for the following reasons:
 * Bootstrapping is by definition according to Crowley (page 62) a resampling of the mean.  Yet the authors specify that they do this of the variance.  I realize that they use bootstrapping because their sample sizes are small (between 1 and 40), but it seems to me that they could have a) aimed for a higher number of measurements, b) used counts and measurements from different data sources, or c) simply reported what they had.
 * Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication.  
 ```{r}
