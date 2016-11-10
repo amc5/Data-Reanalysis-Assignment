@@ -1,0 +1,804 @@
+Genus,Species,Subspecies,Sex,Sex_age,Vertebral formula,Presacral No.,Analyse,Running_Speed,Length_Limbs,Species_name
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16T 3L 4S 9+Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,3S,NA,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16T 3L 1L/S 3S 7+Cg,26.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16T 3L 3S 9Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 15T 1T/L 3L 3S 13Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 19T+L 3S 7+Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16T 3L 1L/S 3S 11Cg,26.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16.5T 1T/L 2L 3S 5+Cg ,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 15T 3L 1l/S 3S 12Cg,26.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16T 1T/L 2L 4S 12Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,F,F,7C 15T 4L 3S 12Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 16T 1T/L 2L 3S,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 17T 2L 3S 12CG,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a,,"7C 15T 4L 1L/S 2S probably first rib sternal parts lacking, otherwise first ribs rudimentary",26.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,,,7C 16T 4L 3S 13Cg (or 15T 1T/L),27,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,,,7C 15T 1T/L 3L 3S 12Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,F,F,7C 16T 3L 3S 1S/Cg 12Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,M,M,7C 15T 3L 1L/S 3S 12Cg,25.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 15T 1T/L 2L 1L/S,25.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 15T 3L 1l/S 4S 1S/Cg  11Cg,25.5,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 15T 4L 3S 11Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,n.a.,n.a.,7C 15T 4L 4S 11Cg,26,yes,slow,short,Tachyglossus_aculeatus
+Tachyglossus,aculeatus,n.a.,F,F,7C 16T 3L 1L/S 3S 12Cg,27.5,yes,slow,short,Tachyglossus_aculeatus
+Zaglossus,bruijni,n.a.,n.a.,ad,7C 17T 4L 2+1S 16+Cg,28,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,n.a.,n.a.,n.a.,7C 15T 1L/S 4L 3S 7+Cg or 15T 5L 3S 4+Cg,27,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,n.a.,n.a.,M ad,7C 16T 1L/S 4L 3S 3+Cg,26,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,n.a.,n.a.,n.a.,7C 16T 4L 3S ,27,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,goodfellow,F ,F ,7C 16T 4L 1L/S 3S 1S/Cg 10Cg,27.5,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,goodfellow,M,M ad,7C 16T 1T/L 3L 1L/S 3S 10Cg,27.5,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bartoni,n.a.,n.a.,juv,7C 16T 4L 3S 1S/Cg 7+Cg,27,yes,slow,short,Zaglossus_bartoni
+Zaglossus,bartoni,n.a.,n.a.,n.a.,7C 17T ,NA,yes,slow,short,Zaglossus_bartoni
+Zaglossus,bruijni,n.a.,F,F ad (?M),7C 16T 4L 1L/S 3S 8Cg,27.5,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,n.a.,F,F ad,7C 17T 4L 3S 10Cg,28,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,gularis,n.a.,ad,7C 15T 1T/L 4L 3S 11Cg,27,yes,slow,short,Zaglossus_bruijni
+Zaglossus,bruijni,n.a.,n.a.,n.a.,7C 16T 4L 1L/S 8+Cg,27.5,yes,slow,short,Zaglossus_bruijni
+Orycteropus,afer,n.a.,F,F,7C 13T 1T/L 6L 1L/S 5S 28Cg ,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,faradjius,F,F,7C 13T 6L 1L/S 5S 28Cg ,26.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 7L 6S 26Cg,27,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 7L 1L/S 6S 25+Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,F,F,7C 12T 1T/L 7L 1L/S 5S 1S/Cg 21+Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,n.a.,n.a.,7C 13T 7L 1L/S 6S 21+Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,n.a.,J n.a.,7C 13T 7L 6S 25Cg,27,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 1T/L 7L 6S 28Cg,28,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 7L 1L/S 6S 26Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 1T/L 7L 6S 26Cg,28,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,n.a.,n.a.,7C 13T 7L 6S 27Cg,27,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,F,F,7C 13T 1T/L 6L 1L/S 6S 17+Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,n.a.,n.a.,7C 12T 1T/L 7L 1L/S 6S 6+Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,n.a.,n.a.,7C 13T 7L 1L/S 6S 22+Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 8L 6S 25Cg,28,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 8L 6S 14+Cg,28,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,n.a.,n.a.,7C 13T 7L 1L/S 6S 24Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,capensis,F,F,7C 13T 7L 1L/S 5S 26Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 13T 8L 5S 1S/Cg 27Cg,28,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,n.a.,M,M,7C 14T 7L 1L/S 6S 24Cg,28.5,yes,slow,intermediate,Orycteropus_afer
+Orycteropus,afer,aethiopicus,F,F,7C 14T 6L 1L/S 7S 28Cg,27.5,yes,slow,intermediate,Orycteropus_afer
+Elephas,maximus,n.a.,F,F,7C 19T 4L 2S 1S/Cg 26Cg,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a,n.a,7 (3+ )C 19T 4L 2S 1S/Cg10+Cg,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,F,F ad,7C 19T 4L 4S ,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,M,M,7C 20T 2L 3S 1S/Cg 10+Cg,29,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,M,M,7C 19T 2L 1L/S 2S 1S/Cg 8+Cg,28.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,F,F,7C (6C 1C/T) 19T 3L 3S 1S/Cg 8+Cg ,29,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,M,M juv,7C 19T 3L 1L/S 3S 25Cg,29.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,n.a.,7C 19T 2L 1L/S 4S 25Cg,28.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,n.a.,7C 19T 3L 1L/S 3S 1S/Cg 21Cg,29.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,maximus,n.a.,n.a.,7C 18T 1T/L 2L 1L/S 3S 27 Cg,28.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,juv. ,7C 19T 3L 4S 29Cg,29,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,M,M,7C 21T 2L 4S 10+Cg,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,F,F,7C 20T 3L 4S 33Cg,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,F,,7C 20T 3L 4S 3+Cg,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,,7C 20T 1T/L 3L 3S 25Cg ,31,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,,7C 19T 1T/L 2L 1L/S 3S 6+Cg ,29.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,F,,7C 19T 4L 3S 24Cg,30,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,,7C 19T 3L 4S 16+Cg,29,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,,7C 20T 4L 3S 29Cg,31,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,M,,7C 20T 3L 1L/S 3S 10+Cg,30.5,yes,slow,intermediate,Elephas_maximus
+Elephas,maximus,n.a.,n.a.,ad,7C 19T 3L 2+1S 1S/Cg 27Cg,29,yes,slow,intermediate,Elephas_maximus
+Loxodonta,africana,n.a.,M,M,20T 1+L,NA,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,M,M ad ,7C 20T 3L 5S 5+Cg,30,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,n.a.,juv,7C 21T 3L 4S 16Cg,31,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,M,M,"7C 21T 3L 4S 24Cg (or 20T 1T/L, not good to see)",31,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,M,,7C 21T 2L 1L/S 3S 30Cg,30.5,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,M,,7C 20T 3L 4S 29Cg,30,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,n.a.,,7C 20T 1T/L 1L 1L/S 3+1S 24Cg,29.5,yes,slow,intermediate,Loxodonta_africana
+Loxodonta,africana,n.a.,F,F ad,7C 20T 3L 2+3S 17+Cg,30,yes,slow,intermediate,Loxodonta_africana
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 10+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 27Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 2S 24Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 20+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 2S 24Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 24Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,ad NA,7C 13T 7L 3S 24Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 24Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,3+L 3S,NA,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,7C 13T 7L 3S 18+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 18+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,7C 13T 7L 3S 21+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,7C 13T 7L 3S 21+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M,7C 13T 7L 3S 22+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 25Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 19Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,1+L 3S,NA,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M ad,7C 13T 7L 3S 25+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M ad,7C 13T 7L 3S 29Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M ad,3S,NA,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M ,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M,M ad,7C 13T 7L 3S 20+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,M, M,7C 13R 7L 3S 10+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 22Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F juv,7C 13T 7L 3S 19Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,juv,7C 13T 7L 3S 17+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13R 7L 3S 15+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,NA,7C 13T 7L 3S 19Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 12+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 6+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 10+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 10+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,F,F,7C 13T 7L 3S 6+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+,,,,,,,,,,
+Acinonyx,jubatus,n.a.,n.a.,n.a.,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,n.a.,7C 13T 7L 2+1S 18+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,n.a.,7C 13T 7L 2+1S 22Cg Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,n.a.,7C 13T 7L 2+1S 12+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Acinonyx,jubatus,n.a.,n.a.,n.a.,7C 13T 7L 2+1S 8+Cg,27,yes,fast,long_intermediate_limbs,Acinonyx_jubatus
+Caracal,caracal,n.a.,F,F,7C 13T 7L 3S 15+Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S 18Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,F,F juv.,7C 13T 7L 2S 19Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S 17Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,melanurus,M,M ad,7C 13T 7L 3S 21Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S 11+Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S 30Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,M,M,7C 14T 6L 2S 24Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 14T 6L 3S 24Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA,7C 13T 7L 3S 17+Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,NA Ad,7C 13T 7L 3S 19Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,M,M 10 kg,7C 13T 7L 3S 18+Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,F,F,7C 13T 7L 2S 8+Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,M,M,7C 13T 7L 3S 14+Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Caracal,caracal,n.a.,n.a.,ad,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Caracal_caracal
+Felis,silvestris,lybica,M,M,7C 13T 7L 3S 18+Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,M,M,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F,7C 13T 7L 3S 10+Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F,7C 13T 7L 2S 13+Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,M,M,7C 13T 7L 3S 22Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 19Cg (18+),27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 19Cg ,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F ad,7C 13T 7L 2S 15+Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F,7C 13T 7L 3S 13+Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,M,M,7C 13T 7L 3S 21Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F juv,7C 13T 7L 1+S 5+Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 10+T 7L 3S 18+Cg,NA,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F,7C 13T 7L 3S Cg ,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,n.a.,NA,7C 13T 7L 3S 22Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,lybica,F,F,7C 13T 7L 3S Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Felis,silvestris,n.a.,F,F ad,7C 13T 7L 3S  22Cg,27,yes,fast,long_intermediate_limbs,Felis_silvestris
+Leopardus,pardalis,n.a.,M,M ad,7C 13T 7L 2+1S  10+Cg,27,yes,fast,long_intermediate_limbs,Leopardus_pardalis
+Leopardus,pardalis,n.a.,n.a.,ad,7C 13T 7L 2+1S  23Cg,27,yes,fast,long_intermediate_limbs,Leopardus_pardalis
+Leopardus,pardalis,n.a.,n.a.,ad,7C 13T 7L 2+1S 15+Cg,27,yes,fast,long_intermediate_limbs,Leopardus_pardalis
+Leopardus,pardalis,n.a.,M,M juv.,7C 14T 6L 2+1S 20Cg,27,yes,fast,long_intermediate_limbs,Leopardus_pardalis
+Leopardus,wiedii,n.a.,n.a.,adult,7C 13T 7L 2S+1S 15+Cg,27,yes,fast,long_intermediate_limbs,Leopardus_wiedii
+Leopardus,wiedii,n.a.,n.a.,almost adult,7C 13T 7L 2+1S 1+Cg,27,yes,fast,long_intermediate_limbs,Leopardus_wiedii
+Leopardus,geoffryi,n.a.,M,M almost ad,7C 13T 7L 2S 1S/Cg 27Cg,27,yes,fast,long_intermediate_limbs,Leopardus_geoffryi
+Leopardus,wiedii,vigens,n.a.,NA,7C 13T 7L 2S 27Cg,27,yes,fast,long_intermediate_limbs,Leopardus_wiedii
+Leopardus,pardalis,spec,n.a.,NA,7C 1C/T 13T 7L 1+ S 16+Cg ,NA,yes,fast,long_intermediate_limbs,Leopardus_pardalis
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 5+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 13T 7L 3S 12+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 26Cg ,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 16+Cg ,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 12T 7L 3S 15+Cg,26,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 14+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 21Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 10+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,juv,7C 13T 7L 2S 19+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 13T 7L 3S ***,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 3+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 2S 16+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 2S 16+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 13T 7L 2S 19+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 13T 7L 3S 17+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M,7C 13T 7L 3S 21Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 22Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,M,M juv,7C 13T 7L 3S 15+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,juv,7C 13T 7L 3S 17+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,photo,7C 13T 7L 3S 21Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 19+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 21Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,F,F,7C 13T 7L 3S 19Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 22Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 12T 7L 3S 12+Cg,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Leptailurus,serval,n.a.,n.a.,NA,7C 13T 7L 3S 30Cg ,27,yes,fast,long_intermediate_limbs,Leptailurus_serval
+Lynx,rufus,n.a.,M,M,7C 13T 7L 3S 15Cg,27,yes,fast,long_intermediate_limbs,Lynx_rufus
+Lynx,rufus,texensis,n.a.,NA,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Lynx_rufus
+Lynx,rufus,n.a.,F,F,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Lynx_rufus
+Lynx,lynx,n.a.,M,M ad,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,M,M ad,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,F,F juv,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S 13Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,pulles,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S afmaken,NA,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,F,F ad,7C 13T 7L 3S 13+Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,F,F ad,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S ,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,ad,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,M,M,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,M,M,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,n.a.,NA,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,M,M,7C 13T 7L 3S 15Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,M,M,7C 13T 7L 3S 15Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,M,M,7C 13T 7L 3S 9+Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Lynx,lynx,n.a.,F,F,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Lynx_lynx
+Prionailurus,bengalensis,n.a.,M,M ad,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,javanensis,n.a.,juv,7C 13T 7L 3S 15+Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,sumatranus,n.a.,juv,7C 13T 7L 3S 16Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,F,F ad,7C 13T 7L 3S 19Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,n.a.,juv,7C 13T 1T/L 6L 3S 8+Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,M,M,7C 13T 7L 3S 15Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,n.a.,photo ad,7C 13T 7L 3S 17Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,M,M,7C 13T 7L 3S 19Cg photo 13T,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,F,F ,7C 13T 7L 3S 17Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,F,F 2100 gr,7C 13T 7L 3S 17Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Prionailurus,bengalensis,n.a.,F,F ,7C 13T 7L 3S 17Cg,27,yes,fast,long_intermediate_limbs,Prionailurus_bengalensis
+Profelis,aurata,n.a.,n.a.,NA,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,cottoni,n.a.,NA,7C 13T 7L 3S 5+Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,cottoni,n.a.,NA,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,cottoni,n.a.,NA,7C 13T 7L 1+S 16+Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,cottoni,F,F,7C 13T 7L 1+S 17+Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,n.a.,n.a.,NA,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,n.a.,F,F,7C 13T 7L 3S 5+Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Profelis,aurata,n.a.,n.a.,NA,7C 13T 7L 3S 20Cg,27,yes,fast,long_intermediate_limbs,Profelis_aurata
+Panthera,pardus,n.a.,n.a.,NA 1 yr,7C 13T 7L 3S 28Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA J,7C 13T 7L 3S 19+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA ,7C 13T 7L 3S 20+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F J,7C 13T 7L 3S 21+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 15+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F 1 yr,7C 13T 7L 3S 27Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F ad,7C 13T 7L 3S 24+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F,7C 13T 7L 3S 19+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L ?C 5+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 24+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 7+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,3+C2+T2+L 3S,NA,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F,7C 13T 7L 3S 3+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,photo,7C 13T 7L 3S 7+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,photo,7C 13T 7L 3S 7+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F,7C 13T 7L 3S 20+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,photo,7C 13T 7L 3S 25Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,M,M,7C 13T 7L 3S 15+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,F,F,7C 13T 7L 3S 20+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,photo,7C 13T 7L 3S 18+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,ad,7C 13T 7L 3S 27Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,ad. ,7C 13T 7L 3S 26Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,juv,7C 13T 7L 3S 23Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 18+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,small adult specimen,7C 13T 7L 3S,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 29Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,M,M,7C 13T 7L 3S 16+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,M,M juv,7C 13T 7L 3S 24+Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Panthera,pardus,n.a.,n.a.,NA,7C 13T 7L 3S 24Cg,27,yes,fast,long_intermediate_limbs,Panthera_pardus
+Lycaon,pictus,n.a.,F,F ad,7C 13T 7L 3S 18Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a.,7C 13T 7L 3S 19g,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a., 7C 13T 7L 3S 10+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a., 7C 13T 7L 3S 19Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,F,F,7C 13T 7L 2S 17Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a.,7C 13T 7L 3S 10+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a.,7C 13T 7L 3S 6+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a. ,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,lupinus,F,F,7C 13T 7L 3S 16+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,lupinus,M,M,7C 13T 7L 2S 21Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,lupinus,n.a.,NA,7C 13T 7L 3S 14+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,F,F,7C 13T 7L 2S 15+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,M,M,7C 13T 7L 2S 11+Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,M,M,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Lycaon_pictus
+Lycaon,pictus,n.a.,n.a.,n.a.,7C 13T 7L 3S 19Cg,27,yes,fast,long ,Lycaon_pictus
+Canis,lupus,n.a.,n.a.,ad,7C 13T 7L 3S 13Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M ad,7C 13T 7L 3S 14Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M ad,7C 13T 7L 3S 17Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,ad,7C 13T 1T/L 6L 3S 19Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,ad,7C 13T 7L 3S 17Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,ad,7C 13T 7L 3S 19Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,Fad,7C 13T 7L 3S 10+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,ad,7C 13T 7L 3S  ,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,Fad,7C 13T 7L3S 15Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M ad,7C 13T 7L3S 3+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,F ad,7C 13T 7L3S 6+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M ad,7C 13T 7L 3S 14Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,F ad,7C 13T 7L 3S 13Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,F ad,7C 13T 7L 3S 7+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M ad,7C 13T 7L 3S 15Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,ask Mogens,7C 13T7L 3S 13+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L 3S 15+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M ad,7C 13T 7L 3S  ,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L ,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L 3S  ,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L 3S 5+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,,7C 13T 7L 3S 1+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,,7C 13T 7L 3S 17Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L 3S 8+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,F,7C 13T 7L 3S 8+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,F,7C 13T 7L 3S 3+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,F,F,7C 13T 7L 3S 9+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L 3S ,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,M,M,7C 13T 7L2S 1S/Cg 3+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,pallipes,M,M,7C 13T 7L3S 1+Cg,27,yes,fast,long ,Canis_lupus
+Canis,lupus,n.a.,n.a.,n.a.,7C 13T 7L3S19Cg,27,yes,fast,long ,Canis_lupus
+Canis,latrans,n.a.,F,F,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Canis_latrans
+Canis,latrans,n.a.,M,M,7C 13T 7L 3S 18Cg,27,yes,fast,long ,Canis_latrans
+Canis,latrans,n.a.,M,M,7C 13T 7L 3S 19Cg,27,yes,fast,long ,Canis_latrans
+Canis,latrans,n.a.,M,M,7C 13T 7L 3S 18Cg,27,yes,fast,long ,Canis_latrans
+Canis,adustus,n.a.,n.a.,n.a.,7C 13T 7L 3S 12+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 8+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,n.a.,7C 13T 7L 3S 8+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 13+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,1:L 3S,NA,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,juv,7C 13T 7L 3S 8+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,n.a.,7C 13T 7L 3S 18Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,M,M ad,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,M,M juv,7C 13T 1T/L 6L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,M,M,7C 13T 7L 3S ,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,M,M,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,n.a.,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,n.a.,7C 12+T 5+L 3S 7+Cg,NA,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,M,M,7C 13T 7L 3S 15+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 13+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,M,M,7C 13T 7L 3S 14+Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,F,F,7C 13T 7L 3S 21Cg,27,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,,6+C 11+T 7L 3S 5+Cg,NA,yes,fast,long ,Canis_adustus
+Canis,adustus,n.a.,n.a.,n.a.,7C 13T 7L 3S 3+Cg,27,yes,fast,long ,Canis_adustus
+Canis,mesomelas,n.a.,n.a.,n.a.,7C 13T 7L 3S 14+Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,n.a.,n.a.,3+L 3S 5+Cg,NA,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,M,M,7C 13T 7L 3S 19Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,n.a.,n.a.,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,M,M,7C 13T 7L 3S 18Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,n.a.,ad,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,F,F,7C 13T 7L 3S 20Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,F,F,7C 13T 7L 2S 1S/Cg 21Cg,27,yes,fast,long ,Canis_mesomelas
+Canis,mesomelas,n.a.,M,M,7C 13T 7L 3S 12+Cg,27,yes,fast,long ,Canis_mesomelas
+Chrysocyon ,brachyurus,n.a.,M,M,7C 13T 1T/L 6L 3S 21Cg,27,yes,fast,long ,Chrysocyon__brachyurus
+Chrysocyon ,brachyurus,n.a.,F,F,7C 13T 7L 3S 10+Cg,27,yes,fast,long ,Chrysocyon__brachyurus
+Chrysocyon ,brachyurus,n.a.,M,M ad,7C 13T 7L 3S 17Cg,27,yes,fast,long ,Chrysocyon__brachyurus
+Chrysocyon ,brachyurus,n.a.,n.a.,n.a.,7C 13T 7L 3S 13+Cg,27,yes,fast,long ,Chrysocyon__brachyurus
+Chrysocyon ,brachyurus,n.a.,n.a.,ad,7C 13T 7L 3S 16Cg,27,yes,fast,long ,Chrysocyon__brachyurus
+Chrysocyon ,brachyurus,n.a.,n.a.,ad,7C 13T 7L 3S 18Cg,27,yes,fast,long ,Chrysocyon__brachyurus
+Meles,meles,n.a.,F,F,7C 14T 1T/L 4L 1S/L 3S  18Cg,26.5,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 14T 1T/L 5L 3S  16Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S  18Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S  10+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S  18Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,2+L 3S 2+Cg,NA,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 1L/S 2S  17Cg,27.5,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 2S  1S/Cg 5+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 14T 5L 3S 15+Cg,26,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S 17Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S 18Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S 18Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S 17Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S 16Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S 17Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 1S/L 2S 15+Cg,27.5,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F?,7C 15T 4L 1L/S 3S 17Cg ,26.5,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 3S 17Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S 15+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,n.a.,NA,7C 14T 4L 1L/S 3S 14+Cg,25.5,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,n.a.,NA,2+L 3S 2+Cg,NA,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,n.a.,NA,7C 15T 5L 3S 17+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M,7C 15T 5L 2S 13+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S 15+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,n.a.,NA,1+C 15T 4L 1L/S 2S 1S/Cg 3+Cg,26.5,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S 2S 1+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 5L 3S ,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F,7C 15T 4L 3S 12Cg,26,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F ad,7C 15T 5L 3S 30Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M ad,7C 15T 5L 3S,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M ad,7C 15T 5L 3S 11+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,M,M ad,7C 14T 1T/L 5L 3S 15+Cg,27,yes,slow,short_limbs,Meles_meles
+Meles,meles,n.a.,F,F ad,7C 15T 5L 3S 10+Cg,27,yes,slow,short_limbs,Meles_meles
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 13Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 10+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 8+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,n.a.,NA,7C 14T 6L 2S 1S/Cg 5+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 13Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 16Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 16Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 2S 15Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 2S 1S/Cg 9+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 2S,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,n.a.,juv,7C 14T 6L 3S 10+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 9+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 13Cg ,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,n.a.,juv,7C 14T 6L 3S 12Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,n.a.,NA,7C 14T 6L 2S 15Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 1L/S 3S 12Cg,27.5,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 9+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 13Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 15T 5L 1L/S 3S ,27.5,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 12Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,n.a.,NA,7C 14T 6L 2S 10+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 13Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 2 or 3S 13+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,F,F,7C 14T 6L 3S 14Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,nivalis,n.a.,M,M,7C 14T 6L 3S 15Cg*),27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_nivalis
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,F,F,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 14+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 1L/S 3S 12+Cg,26.5,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,F,F,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 5+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,F,F,7C 14T 6L 4S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,n.a.,NA,7C 14T 6L 2+S ,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M ad,7C 14T 6L 3S 13+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M ad,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M ,7C 15T 6L 3S 3+Cg,28,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 18Cg ,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 18Cg ,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,F,F,7C 14T 6L 3S 16Cg ,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,F,F,7C 14T 6L 2S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,F,F,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 2S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M ad,7C 14T 6L 3S 15+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S18 Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,n.a.,M,M,7C 14T 6L 3S 6+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,F,F,7C 14T 6L 4S 13+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,F,F,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,n.a.,juv.,7C 14T 6L 3S 7+Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,M,M,7C 14T 1T/L 5L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,F,F,7C 14T 6L 3S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,F,F,7C 14T 1T/L 5L 3S 18Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Mustela,erminea,erminea,F,F,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_intermediate_ limbs,Mustela_erminea
+Martes,foina,foina,n.a.,NA,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 1T/L 5L 3S 18Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 6+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 8+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 10+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,foina,M,M,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,n.a.,NA,7C 14T 6L 3S 18+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,n.a.,NA,7C 14T 6L 3S 20Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 4S 19Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,n.a.,NA,7C 14T 7L 3S 15Cg,28,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 19Cg ,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,n.a.,NA,7C 14T 6L 3S 20Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F juv,7C 14T 6L 3S 25Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S 20Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 17Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F juv,7C 14T 6L 3S 24Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 10+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S ,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 4+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F ad,7C 14T 6L 3S 25Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,n.a.,NA,7C 14T 6L 3S 26Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,n.a.,NA,7C 14T 6L 3S 18Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 20Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 12+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 21Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 1T/L 5L 3S 21Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S 23Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S 19+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 4S 20Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 17+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L3S 21Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S 19+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 13+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,F,F,7C 14T 6L 3S 15+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S 16+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,foina,n.a.,M,M,7C 14T 6L 3S 16+Cg,27,yes,fast_halfbound,short_limbs,Martes_foina
+Martes,martes,n.a.,M,M,7C 14T 6L 3S 4+Cg,27,yes,fast_halfbound,short_limbs,Martes_martes
+Procyon,lotor,n.a.,n.a.,NA,7C 14T 1T/ 5L 1L/S 3S 17Cg,27.5,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,7C 14T 6L 3S 15Cg,27,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,7C 14T 5L 1L/S 2S 17Cg,26.5,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,6C 1C/T 13T 7L 3S 14Cg !,27,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,7C 13T 7L 3S 10+Cg,27,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,F,F,7C 14T 5L 1L/S 4S 15Cg,26.5,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,7C 15T 5L 4S 17Cg,27,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,7C 14T 6L 4S 17Cg,27,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,F,F,7C 14T 6L 3S 1S/Cg 10+Cg,27,yes,slow,short_intermediate_ limbs,Procyon_lotor
+Procyon,lotor,n.a.,n.a.,NA,7C 14T 1T/L 5L 4S 14Cg,27,yes,slow,intermediate,Procyon_lotor
+Procyon,cancrivorus,n.a.,n.a.,NA,7C 14T 6L 3S 7+Cg,27,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,n.a.,NA,7C 14T 6L 3S 17Cg,27,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,F,F ad,7C 13T 6L 3S 9+Cg,26,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,M,M juv,7C 15T 5L 3S 17Cg,27,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,F,F juv,7C 15T 5L 3S 11+Cg,27,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,M,M ad,7C 14T 5L 4S 18Cg,26,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,n.a.,ad,7C 14T 6L 4S 15Cg,27,yes,slow,intermediate,Procyon_cancrivorus
+Procyon,cancrivorus,n.a.,F,F,7C 15T 5L 4S 18Cg,27,yes,slow,intermediate,Procyon_cancrivorus
+Potamochoerus,porcus,n.a.,M,M,1+T 4L 1L/S 4S,25.5,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 14T 5L 3S 14+Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,n.a.,NA,7C 14T 5L 4S 6+Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,n.a.,NA,7C 13T 5L 1L/S 3S,25.5,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 14T 3+L 4S 14+Cg,NA,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,n.a.,Juv. NA,7C 14T 5L 3S 21Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 13T 5L 3S 10+Cg,25,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,n.a.,NA,7C 14T 1T/L 4S 12+Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,n.a.,NA,NA,NA,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,hassama or lavatus,M,M,7C 14T 5L 3S 23Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,hassama or lavatus,F,F juv,7C 14T 5L 3S 23Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,F,F juv,7C 14T 1T/L 4L 4S 27Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,F,F subadult,7C 14T 5L 4S 27Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,hassama or lavatus,F,F ad,7C 14T 5L 4S ,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M juv,7C 14T 5L 4S 25Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M ad,7C 14T 5L 4S 21Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 14T 5L 4S 22Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 14T 5L 3S 16+Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M ad,7C 14T 5L 4S 23Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 15T 4L 1L/S 4S 23Cg,26.5,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,larvatus,n.a.,M,M juv,7C 14T 4L 1L/S 2+S 5+Cg,25.5,yes,slow,short_intermediate_ limbs,Potamochoerus_larvatus
+Potamochoerus,porcus,n.a.,n.a.,NA,7C 13T 5L 4S 21 Cg,25,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M juv,7C 14T 5L 2+S 12+Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,n.a.,NA,7C 14T 1T/L 4L 4S 1+Cg,26,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Potamochoerus,porcus,n.a.,M,M,7C 13T 5L 4S 23Cg,25,yes,slow,short_intermediate_ limbs,Potamochoerus_porcus
+Phacochoerus ,africanus,n.a.,n.a.,NA,7C 12T 6L 4S,25,yes,slow,short_intermediate_ limbs,Phacochoerus__africanus
+Phacochoerus ,africanus,n.a.,n.a.,NA,7C 13T 6L 4S,26,yes,slow,short_intermediate_ limbs,Phacochoerus__africanus
+Phacochoerus ,africanus,n.a.,n.a.,NA,7C 13T 6L 4S 2+Cg,26,yes,slow,short_intermediate_ limbs,Phacochoerus__africanus
+Sus,scrofa,n.a.,M,M ad.,7C 14T 5L 5S 26Cg,26,yes,slow,short_intermediate_ limbs,Sus_scrofa
+Sus,scrofa,ferus,M,M ad.,7C 14T 5L 5S 16+Cg,26,yes,slow,short_intermediate_ limbs,Sus_scrofa
+Sus,scrofa,celebensis,M,M ad.,7C 14T 4L 1L/S 4S 16+Cg,25.5,yes,slow,short_intermediate_ limbs,Sus_scrofa
+Sus,scrofa,celebensis,F,F ad,7C 14T 5L 4S 1S/Cg 27Cg,26,yes,slow,short_intermediate_ limbs,Sus_scrofa
+Sus,scrofa,n.a.,n.a.,Juv,7C 14T 6L 3S 21+Cg,27,yes,slow,short_intermediate_ limbs,Sus_scrofa
+Sus,scrofa,n.a.,n.a.,NA,7C 13T 5L 1L/S 5S 8+Cg,25.5,yes,slow,short_intermediate_ limbs,Sus_scrofa
+Babyrousa ,babyrussa,n.a.,n.a.,NA,7C 13T 6L 5S 9+Cg,26,yes,slow,short_intermediate_ limbs,Babyrousa__babyrussa
+Hippopotamus,amphibius,n.a.,n.a.,ad,7C 16T 2L 1L/S 5S 13Cg,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,M,M,7C 15T 3L 1L/S 5S 16Cg **) articulates and is much thicker,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,n.a.,NA,7C 15T 3L 1L/S 4S 4+Cg **) articulates and somewhat thicker ,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,F,F,7C 15T 3L 1L/S 6S  **) articulates and somewhat thicker ,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,n.a.,NA,7C 15T 4L 5S 3+Cg,26,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,M,M ad,7C 15T 3L 1L/S 4S 17Cg,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,M,M,7C 15T 3L 1L/S 2+4S 14Cg ,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,madagascariensis,n.a.,n.a.,NA,7C 16T 3L 4S 2+Cg,26,yes,slow,short_limbs,Hippopotamus_madagascariensis
+Hippopotamus,amphibius,n.a.,n.a,n.a,7C 15T 3L 1L/S 2+4S 15Cg,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,n.a.,n.a,n.a,idem minder sacraal L/S 2+3 S 10=CG,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hippopotamus,amphibius,capensis,n.a.,n.a.,7C 14T 1T/L 3L 1L/S 2+3S 7+Cg,25.5,yes,slow,short_limbs,Hippopotamus_amphibius
+Hexaprotodon ,liberiensis,n.a.,n.a.,ad,7C 15T 3L 1L/S 2+3S 1S/Cg 4+Cg,25.5,yes,slow,short_limbs,Hexaprotodon__liberiensis
+Hexaprotodon ,liberiensis,n.a.,n.a.,ad,7C 15T 4L 3S 1S/Cg 7Cg ,26,yes,slow,short_limbs,Hexaprotodon__liberiensis
+Hyemoschus,aquaticus,n.a.,M,M (A),7C 12T 6L 4S 3+Cg,25,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA(A),7C 12T 6L 5S 13Cg,25,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA(A),7C 13T 5L 1L/S  5S 13Cg,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,F,F,7C 13T 6L 4S 2+Cg,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,M,M ,7C 12T 5L 1L/S 4S 3+Cg,24.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA(A),7C 13T 5L 1L/S 5S 10+Cg,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA (A),7C 13T 6L 4S 1S/Cg 11Cg,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA,7C 13T 5L 2S 8+Cg,25,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA,1+C 12T 1T/L 4L 1L/S 4S 1S/Cg 2+Cg ,24.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA,7C 12T 1T/L 6L 4S 7+Cg,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,F,F,7C 13T 5L 1L/S,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,adult,7C 13T 6L 4S 13Cg,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,M,M,7C 13T 5L 1L/S 4S 16Cg,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,F,F adult,7C 13T 5L 1L/S 4S1S/Cg 4+Cg,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA,7C 13T 5L 1L/S 6S 10Cg,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,juv,7C 13T 6L 2+S,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA,7C 13T 6L 4S (5L 1L/S),26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,M,M,7C 12T  1T/L 6L 4S 13Cg ,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,M,M,7C 13T 5L 1L/S 5S 12Cg,25.5,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Hyemoschus,aquaticus,n.a.,n.a.,NA,7C 13T 6L 4S 5+Cg,26,yes,slow,short_intermediate_ limbs,Hyemoschus_aquaticus
+Tragulus,kanchil,n.a.,M,M,7C 13T 6L 5S 9+Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_kanchil
+Tragulus,kanchil,n.a.,M,M,7C 13T 6L 5S 10Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_kanchil
+Tragulus,kanchil,n.a.,M,M,7C 13T 6L 5S 2+Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_kanchil
+Tragulus,kanchil,n.a.,F,F,7C 13T 6L 5S 13Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_kanchil
+Tragulus,kanchil,n.a.,M,M,7C 13T 6L 1L/S45S 16Cg,26.5,yes,slow,short_intermediate_ limbs,Tragulus_kanchil
+Tragulus,napu,stanleyanus,M,M,7C 13T 6L 5S 8+Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_napu
+Tragulus,javanicus,n.a.,M,M,7C 13T 6L 5S 13Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_javanicus
+Tragulus,javanicus,n.a.,n.a.,NA,7C 13T 6L 4S 13Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_javanicus
+Tragulus,javanicus,n.a.,n.a.,NA,7C 13T 7L 4S 17+Cg,27,yes,slow,short_intermediate_ limbs,Tragulus_javanicus
+Tragulus,javanicus,n.a.,F,F,7C 13T 5L 1L/S 4S 13Cg,25.5,yes,slow,short_intermediate_ limbs,Tragulus_javanicus
+Tragulus,javanicus,n.a.,M,M adult,7C 13T 5L 5S 12+Cg,25,yes,slow,short_intermediate_ limbs,Tragulus_javanicus
+Tragulus,javanicus,n.a.,M,M adult,7C 13T 6L 4S 1S/Cg 6+Cg,26,yes,slow,short_intermediate_ limbs,Tragulus_javanicus
+Tragulus,napu,n.a.,M,M,7C 13T 6L 5S 6+Cg ,26,yes,slow,short_intermediate_ limbs,Tragulus_napu
+Moschiola,meminna,n.a.,F,F,7C 13T1T/L 5L1L/S 4S 7+Cg,26.5,yes,slow,short_intermediate_ limbs,Moschiola_meminna
+Rangifer,tarandus,n.a.,F,F juv,7C 14T 5L 5S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,F,F ad,7C 14T 5L 4S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M ad,7C 14T 5L 5S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,NA,7C 14T 5L 4S 1S/Cg 9Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,F,F,7C 14T 5L 4S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,NA,14T 4S,NA,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M ad,7C 14T 5L 4S 1S/Cg 8 Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M ad,7C 14 T 5L 4S ,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,NA,7C 14 T 5L 4S ,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,juv,2+C 14T 5L 2S +2S/Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M,7C 14T 5L 4S 1S/Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,adult,7C 14T 5L 4S 1S/Cg 9Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,F,F,7C 14T 5L 4S 1S/Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,NA,3+L 4S,NA,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M ad,7C 14T 5L 5S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,juv,7C 14T 5L 3S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,F,F ,7C 14T 5L 4S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M ad,7C 14T 5L 4S,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,ad,7C 14T 5L 3S 10Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M ad,7C 14T 5L 4S 1S/Cg ,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,juv,7C 14T 5L 4S 10Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,n.a.,ad,7C 14T 5L 4S 1S/Cg 8Cg,26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Rangifer,tarandus,n.a.,M,M juv,"7C 15T  4L !L/S (14T 1T/L, diseased) ",26,yes,fast,long_intermediate_limbs,Rangifer_tarandus
+Antilocapra,americana,n.a.,M,M,7C 13T 6L 4S 8+Cg,26,yes,fast,long_limbs,Antilocapra_americana
+Antilocapra,americana,n.a.,M,M ad,7C 13T 6L 5S 9+Cg,26,yes,fast,long_limbs,Antilocapra_americana
+Antilocapra,americana,n.a.,F,F,7C 13T 6L 5S 2+Cg,26,yes,fast,long_limbs,Antilocapra_americana
+Aepyceros,melampus,n.a.,F,F,7C 13T 6L 4S 7+Cg,26,yes,fast,long_limbs,Aepyceros_melampus
+Aepyceros,melampus,n.a.,n.a.,NA,7C 13T 6L  5S 10+Cg,26,yes,fast,long_limbs,Aepyceros_melampus
+Aepyceros,melampus,n.a.,n.a.,NA,7C 13T 6L ,26,yes,fast,long_limbs,Aepyceros_melampus
+Alcelaphus,buselaphus,lelwel,M,M,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Alcelaphus_buselaphus
+Alcelaphus,buselaphus,n.a.,n.a.,ad,7C 13T 6L 4S 14+Cg,26,yes,fast,long_limbs,Alcelaphus_buselaphus
+Alcelaphus,buselaphus,n.a.,n.a.,NA,7C 13T 6L S 14Cg,26,yes,fast,long_limbs,Alcelaphus_buselaphus
+Alcelaphus,buselaphus,n.a.,n.a.,NA,7C 13T 6L 4S 4+Cg,26,yes,fast,long_limbs,Alcelaphus_buselaphus
+Damaliscus,pygargus,phillipsi,M,M juv,7C 13T 6L 3S 2S/Cg 15Cg,26,yes,fast,long_limbs,Damaliscus_pygargus
+Damaliscus,pygargus,phillipsi,F,F ad,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Damaliscus_pygargus
+Damaliscus,spec,n.a.,n.a.,NA,7C 13T 6L 3S 1S/Cg 2+Cg,26,yes,fast,long_limbs,Damaliscus_spec
+Damaliscus,pygargus,n.a.,F,F juv,7C 13T 6L 4S ,26,yes,fast,long_limbs,Damaliscus_pygargus
+Beatragus,hunteri,n.a.,M,M,7C 13T 6L 1+S,26,yes,fast,long_limbs,Beatragus_hunteri
+Connochaetes,gnou,n.a.,M,M,7C ?T 6L 4S 15Cg,NA,yes,fast,long_limbs,Connochaetes_gnou
+Connochaetes,gnou,n.a.,n.a.,NA,7C 13T 6L 1+S 13+Cg,26,yes,fast,long_limbs,Connochaetes_gnou
+Connochaetes,gnou,n.a.,M,M juv,7C 13T 6L 3S 1S/Cg 15Cg,26,yes,fast,long_limbs,Connochaetes_gnou
+Connochaetes,gnou,n.a.,M,M ad,7C 13T 6L 3S 1S/Cg 15Cg,26,yes,fast,long_limbs,Connochaetes_gnou
+Connochaetes,gnou,n.a.,F,F ad,7C 13T 6L 3S 1S/Cg 16Cg,26,yes,fast,long_limbs,Connochaetes_gnou
+Gazella,leptoceros,n.a.,M,M,7C 13T 6L 4S 10+Cg,26,yes,fast,long_limbs,Gazella_leptoceros
+Gazella,leptoceros,n.a.,M,M,7C 13T 6L 4S 10+Cg,26,yes,fast,long_limbs,Gazella_leptoceros
+Gazella,leptoceros,n.a.,F,F,7C 13T 6L 4S 5+Cg,26,yes,fast,long_limbs,Gazella_leptoceros
+Gazella,leptoceros,n.a.,F,F,7C 13T 6L 4S 6+Cg,26,yes,fast,long_limbs,Gazella_leptoceros
+Gazella,leptoceros,n.a.,M,M,7C 13T 6L 4S 9+Cg,26,yes,fast,long_limbs,Gazella_leptoceros
+Gazella,gazella,n.a.,M,M,7C 13T 6L 2+S ,26,yes,fast,long_limbs,Gazella_gazella
+Eudorcas,thomsonii,n.a.,M,M,7C 13T 6L 4S 2+S ,26,yes,fast,long_limbs,Eudorcas_thomsonii
+Gazella,spec,n.a.,F,F,7C 13T 6L 5S 3+S ,26,yes,fast,long_limbs,Gazella_spec
+Eudorcas,rufifrons,n.a.,F,F,7C 13T 5L 5S 4+Cg,25,yes,fast,long_limbs,Eudorcas_rufifrons
+Gazella,spec,n.a.,n.a.,NA,7C 13T 6L 4S 3+Cg,26,yes,fast,long_limbs,Gazella_spec
+Eudorcas,rufifrons,n.a.,M,M,7C 13T 5L 3S 7+Cg,26,yes,fast,long_limbs,Eudorcas_rufifrons
+Saiga,tatarica,n.a.,F,F,7C 13T 6L S 14Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Gazella,spec,n.a.,F,F,7C 13T 6L 4S 15+Cg,26,yes,fast,long_limbs,Gazella_spec
+Gazella,spec,n.a.,F,F,7C 13T 6L 4S 4+Cg,26,yes,fast,long_limbs,Gazella_spec
+Eudorcas,thomsonii,n.a.,F,F,7C 13T 6L 4S 4+Cg,26,yes,fast,long_limbs,Eudorcas_thomsonii
+Eudorcas,thomsonii,n.a.,F,F,7C 13T 6L 4S 9+Cg,26,yes,fast,long_limbs,Eudorcas_thomsonii
+Eudorcas,thomsonii,n.a.,F,F,7C 13T 1T/L 5L 4S 16Cg,26,yes,fast,long_limbs,Eudorcas_thomsonii
+Gazella,spec,n.a.,n.a.,NA,7C 13T 6L 4S 13+ Cg,26,yes,fast,long_limbs,Gazella_spec
+Gazella,dorcas,n.a.,M,M,7C 13T 6L 4S 14Cg,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,dorcas,n.a.,n.a.,NA,7C 13T 6L 3S 1S/Cg 13Cg,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,dorcas,n.a.,F, F pull,7C 13T 6L4S,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,dorcas,n.a.,M,M,7C 13T 6L4S 15Cg,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,dorcas,n.a.,n.a.,juv,7C 13T 6L4S 15Cg,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,dorcas,n.a.,M,M,7C 13T 6L4S 9+Cg,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,dorcas,n.a.,M,M,7C 13T 6L4S,26,yes,fast,long_limbs,Gazella_dorcas
+Gazella,subgutturosa,n.a.,M,M ,7C 13T 6L 4S 13+Cg,26,yes,fast,long_limbs,Gazella_subgutturosa
+Antidorcas,marsupialis,n.a.,F,F adult,7C 13T 6L 4S 6+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F juv,7C 13T 6L 4S 11+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F pull,7C 13T 6L 3S 10+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F juv,7C 13T 6L 3S 1S/Cg 9+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F juv,7C 13T 6L 3S 11+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F pull,7C 13T 6L 3S 10+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F adult,7C 13T 6L 3S 15Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F adult,7C 13T 6L 4S 15Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F adult,7C 13T 6L 4S 9+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Antidorcas,marsupialis,n.a.,F,F adult,7C 13T 6L 4S 9+Cg,26,yes,fast,long_limbs,Antidorcas_marsupialis
+Nanger,granti,robertsi,M,M ad,1+L 4S,NA,yes,fast,long_limbs,Nanger_granti
+Nanger,granti,brighti,M,M ad,1L 5S,NA,yes,fast,long_limbs,Nanger_granti
+Nanger,dama,n.a.,M,M a peu pres adulte,7C 13T 6L 4S 15Cg,26,yes,fast,long_limbs,Nanger_dama
+Nanger,dama,n.a.,M,M adult,7C 13T 6L 4S 12+Cg,26,yes,fast,long_limbs,Nanger_dama
+Litocranius,walleri,n.a.,F,F,7C 13T 6L 4S 13Cg,26,yes,fast,long_limbs,Litocranius_walleri
+Litocranius,walleri,n.a.,F,F,7C 13T 6L 4S 16Cg,26,yes,fast,long_limbs,Litocranius_walleri
+Saiga,tatarica,n.a.,M, M ad,7C 13T 6L 5S ,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,F,F ad,7C 13T 6L 5S 5+Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,M,M juv,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,F,F,7C 13T 6L 1L/S 3S 5+Cg,26.5,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,F,F,7C 13T 6L 4S ,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,M,M ad,7C 13T 6L 5S 11Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,M,M,7C 13T 6L 6S 9Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,M,M,7C 13T 6L 4S 10Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,M,M,7C 13T 6L 4S 6+Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Saiga,tatarica,n.a.,n.a.,check,7C 13T 6L 4S 16Cg,26,yes,fast,long_limbs,Saiga_tatarica
+Tragelaphus,euryceros,n.a.,F,F,7C 13T 6L 5S 2+Cg,26,yes,fast,long_limbs,Tragelaphus_euryceros
+Tragelaphus,spec,n.a.,n.a.,NA,7C 13T 6L 5S 14Cg,26,yes,fast,long_limbs,Tragelaphus_spec
+Tragelaphus,spekii,n.a.,M,M juv,7C 13T 6L 4S 13Cg,26,yes,fast,long_limbs,Tragelaphus_spekii
+Tragelaphus,spekii,n.a.,F,F subad,7C 13T 6L 3S,26,yes,fast,long_limbs,Tragelaphus_spekii
+Tragelaphus,spekii,n.a.,n.a.,juv,7C 13T 6L 4S 12Cg,26,yes,fast,long_limbs,Tragelaphus_spekii
+Tragelaphus,spekii,n.a.,n.a.,juv,7C 13T 6L 3S 16Cg,26,yes,fast,long_limbs,Tragelaphus_spekii
+Tragelaphus,spekii,n.a.,n.a.,juv,7C 13T 6L 1+S,26,yes,fast,long_limbs,Tragelaphus_spekii
+Tragelaphus,spekii,n.a.,M,M,7C 13T 6L 4S 1S/Cg 8+Cg,26,yes,fast,long_limbs,Tragelaphus_spekii
+Tragelaphus,scriptus,n.a.,F,F,7C 13T 6L S 14Cg,26,yes,fast,long_limbs,Tragelaphus_scriptus
+Tragelaphus,euryceros,n.a.,M,Mf ad,7C 13T 6L 5S 14Cg,26,yes,fast,long_limbs,Tragelaphus_euryceros
+Tragelaphus,euryceros,n.a.,M,M juv large,7C 13T 6L 5S 17Cg,26,yes,fast,long_limbs,Tragelaphus_euryceros
+Tragelaphus,scriptus,sylvatica,M,M ad.,7C 13T 6L 5S 12Cg,26,yes,fast,long_limbs,Tragelaphus_scriptus
+Boselaphus,tragocamelus,n.a.,F,F ad,7C 13T 6L 4S 14Cg ,26,yes,fast,long_intermediate_limbs,Boselaphus_tragocamelus
+Boselaphus,tragocamelus,n.a.,M,M ad,7C 13T 6L 5S 16Cg,26,yes,fast,long_intermediate_limbs,Boselaphus_tragocamelus
+Boselaphus,tragocamelus,n.a.,n.a.,check,7C 13T 6L 5S 16Cg,26,yes,fast,long_intermediate_limbs,Boselaphus_tragocamelus
+Taurotragus,oryx,n.a.,n.a.,juv,7C 13T 6L 4S 2+S ,26,yes,fast,long_intermediate_limbs,Taurotragus_oryx
+Taurotragus,oryx,n.a.,F,F ad,7C 13T 6L 5S 17Cg,26,yes,fast,long_intermediate_limbs,Taurotragus_oryx
+Capra,ibex,n.a.,n.a.,check Mogens,7C 13T 6L 3S 7+ Cg,26,yes,fast,intermediate,Capra_ibex
+Ovibos,moschatus,n.a.,F,F ad, 7C 13T 5L 1L/S 5S,25.5,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,n.a.,NA,7C 13T 6L 6S,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M juv,7C 13T 6L 5S ,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M ad,7C 13T  5L 1L/S  6S,26.5,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M ad,7C 13T  6L 6S  (+)6Cg,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,F,F ad,7C 13T  6L 6S 9Cg,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,F,F juv,7C 12T 1T/L 5L 1L/S 3S,25.5,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M ad,7C 13T 5L 5S,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,F,F juv,7C 13T 5L 1L/S 4S,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M juv,"7C 13T 5L 5S (of 1L/S 4S zie foto, tamelijk sacraal)",NA,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,F,F ad,7C 12T 6L 6S,25,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M pull,7C 13T 6L 6S,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,F,F,7C 13T 6L 4S 2+Cg,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M,7C 13T 6L 6S 6Cg,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M,7C 9+T 1+L 6S,NA,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Ovibos,moschatus,n.a.,M,M ad.,7C 13T 6L 5S 7Cg,26,yes,slow,short_intermediate_ limbs,Ovibos_moschatus
+Rupicapra,rupicapra,n.a.,n.a.,check Mogens,7C 13T 6L 5S 6Cg,26,yes,fast,long_limbs,Rupicapra_rupicapra
+Cephalophus,dorsalis,n.a.,F,F,7C 13T 5L 1L/S  4S 7Cg,25.5,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,M,M,7C 14T 5L 5S 11+Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,M,M,7C 14T 5L 5S 7+Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,F,F,7C 14T 5L 3S 10+Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,M,M,7C 14T 5L 3S 4+Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,F,F,7C 14T 5L 4S 5+Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,n.a.,juv,7C 13T 1T/L 5L 3S 13Cg ,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,n.a.,NA,7C 14T 4L 1L/S 4S 15Cg,25.5,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,F,F,7C 14T 5L 4S 11+Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,F,F,7C 14T 6L 3S 10+Cg,27,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,M,M,7C 14T 5L 4S 1S/Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,F,F juv,7C 13T 6L 3S 15Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,M,M,7C 14T 5L 4S 14Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Cephalophus,dorsalis,n.a.,M,M,7C 14T 5L 4S 14Cg,26,yes,slow,short_intermediate_ limbs,Cephalophus_dorsalis
+Oryx,dammah,n.a.,M,M ad,7C 13T 6L 4S 1+Cg,26,yes,fast,long_limbs,Oryx_dammah
+Oryx,dammah,n.a.,n.a.,NA,7C 13T 6L 4S 16Cg,26,yes,fast,long_limbs,Oryx_dammah
+Oryx,beisa,n.a.,F,F ad,7C 13T 6L 4S 8+Cg,26,yes,fast,long_limbs,Oryx_beisa
+Oryx,beisa,n.a.,n.a.,NA,7C 13T 4S 8+Cg,26,yes,fast,long_limbs,Oryx_beisa
+Oryx,beisa,n.a.,M,M,7C 13T 6L 13+Cg,26,yes,fast,long_limbs,Oryx_beisa
+Oryx,spec,n.a.,n.a.,NA,7C 13T 6L 3S 15Cg,26,yes,fast,long_limbs,Oryx_spec
+Oryx,gazella,n.a.,F,F,7C 13T 6L 4S 17Cg,26,yes,fast,long_limbs,Oryx_gazella
+Oryx,gazella,n.a.,M,M,7C 13T 6L 3S 1S/Cg 17Cg,26,yes,fast,long_limbs,Oryx_gazella
+Oryx,gazella,n.a.,F,F,7C 13T 1T/L 5L 4S 16Cg,26,yes,fast,long_limbs,Oryx_gazella
+Kobus,kob,n.a.,F,NA,7C 13T 6L 4S,26,yes,fast,long_limbs,Kobus_kob
+Kobus,kob,n.a.,n.a.,NA,7C 13T 6L 5S,26,yes,fast,long_limbs,Kobus_kob
+Kobus,kob,n.a.,n.a.,NA,7C 13T 6L 4S,26,yes,fast,long_limbs,Kobus_kob
+Kobus,vardoni,n.a.,n.a.,NA,7C 13T 6L 4S 5+Cg,26,yes,fast,long_limbs,Kobus_vardoni
+Kobus,vardoni,n.a.,M,M,7C 13T 6L 4S 3+Cg,26,yes,fast,long_limbs,Kobus_vardoni
+Kobus,ellipsiprymnus,defassa,n.a.,J,7C 13T 6L 4S 3+Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,defassa,F,F,7C 13 T,NA,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,defassa,n.a.,NA,7C 13T 6L 5S ,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,kob,leucotis,M,M,7C 13T 6L  4S 4+Cg,26,yes,fast,long_limbs,Kobus_kob
+Kobus,kob,leucotis,M,M,7C 13T 6L  4S 5+Cg,26,yes,fast,long_limbs,Kobus_kob
+Kobus,kob,nigricans,M,M,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Kobus_kob
+Kobus,vardoni,n.a.,F,F,7C 13T 6L 4S 4+Cg,26,yes,fast,long_limbs,Kobus_vardoni
+Kobus,vardoni,n.a.,M,M,7C 13T 1T/L 6L 4S 4+Cg,27,yes,fast,long_limbs,Kobus_vardoni
+Kobus,vardoni,n.a.,M,M,7C 13T 6L 1+S,26,yes,fast,long_limbs,Kobus_vardoni
+Kobus,vardoni,n.a.,F,F,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Kobus_vardoni
+Kobus,vardoni,n.a.,M,M,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Kobus_vardoni
+Kobus,ellipsiprymnus,defassa,F,F,7C 13T 6L 4S 14+Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,unctuosus,n.a.,NA,7C 13T 6L 1+S,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,ugandae,n.a.,NA,7C 13T 6L 5S,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,leche,n.a.,n.a.,NA,7C 13T 6L 4S,26,yes,fast,long_limbs,Kobus_leche
+Kobus,ellipsiprymnus,n.a.,M,M,7C 13T 6L 4S 1S/Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,n.a.,n.a.,NA,7C 13T 6L 4S 4+Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,n.a.,M,M,7C 13T 6L 5S 14+Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,n.a.,F,F,7C 13T 6L 5S 15Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,n.a.,F,F,7C 1+T 6L 4S 14Cg,NA,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,n.a.,M,M ad,7C 13T 6L 4S,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,ellipsiprymnus,n.a.,n.a.,NA,7C 13T 6L 4S,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,megaceros,n.a.,M,M ad,7C 13T 6L 5S 4+Cg,26,yes,fast,long_limbs,Kobus_megaceros
+Kobus,ellipsiprymnus,onctuosus,M,M,7C 13T 6L 4S 1+Cg,26,yes,fast,long_limbs,Kobus_ellipsiprymnus
+Kobus,spec,n.a.,M,M ad,7C 13T 6L 5S 18Cg,26,yes,fast,long_limbs,Kobus_spec
+Redunca,redunca,wardi,F,F,7C 13T 6L 3S 1S/Cg 10+Cg,26,yes,fast,long_limbs,Redunca_redunca
+Redunca,redunca,wardi,F,F,7C 13T 6L 4S 7+Cg,26,yes,fast,long_limbs,Redunca_redunca
+Redunca,redunca,cottoni,n.a.,NA,7C 13T 6L 4S 3+Cg,26,yes,fast,long_limbs,Redunca_redunca
+Redunca,redunca,n.a.,M,M,7C 13T 6L 5S 10+Cg,26,yes,fast,long_limbs,Redunca_redunca
+Redunca,redunca,n.a.,n.a.,NA,7C 13T 6L 4S,26,yes,fast,long_limbs,Redunca_redunca
+Redunca,fulvorufula,n.a.,M,M,7C 13T 6L 4S 1+Cg,26,yes,fast,long_limbs,Redunca_fulvorufula
+Redunca,fulvorufula,n.a.,M,M,7C 13T 6L 4S,26,yes,fast,long_limbs,Redunca_fulvorufula
+Redunca,fulvorufula,n.a.,F,F,7C 13T 6L 4S 2+Cg,26,yes,fast,long_limbs,Redunca_fulvorufula
+Redunca,arundinum,n.a.,M,M,7C 13T 6L 4S 13+ Cg,26,yes,fast,long_limbs,Redunca_arundinum
+Redunca,arundinum,n.a.,M,M,7C 13T 6L 4S,26,yes,fast,long_limbs,Redunca_arundinum
+Redunca,arundinum,n.a.,M,M,7C 13T 6L 4S 15Cg,26,yes,fast,long_limbs,Redunca_arundinum
+Redunca,arundinum,n.a.,F,F,6L 4S 2+Cg,NA,yes,fast,long_limbs,Redunca_arundinum
+Redunca,arundinum,n.a.,n.a.,NA,7C 13T 6L 4S,26,yes,fast,long_limbs,Redunca_arundinum
+Redunca,arundinum,n.a.,n.a.,Juv,7C 13T 6L 1+S 5+Cg,26,yes,fast,long_limbs,Redunca_arundinum
+Redunca,spec,n.a.,n.a.,NA,7C 13T 6L 4S 4+Cg,26,yes,fast,long_limbs,Redunca_spec
+Pelea,capreolus,n.a.,n.a.,jeune,7C 13T 6L 4S 13Cg,26,yes,fast,long_intermediate_limbs,Pelea_capreolus
