@@ -5,6 +5,7 @@ output: html_document
 
 #Galis et al. (2004) - "Fast running restricts evolutionary change of the vetebral column in mammals"
 ##data analysis done by author Tom J. M. Van Dooren
+
 ###Galis et al. investigae the conservation of mammalian presacral vetebrae and examine whether or not there is a correlation with running speed.  Authors hypothesize that biomechanical problems associated with initial homeotic transformations result in the strong conservation of number of presacral vertebrae in fast mammals, moreso than in slow mammals, because quickness and agility would be hampered by incomplete and/or asymmetric fusions of lumbar vertebrae to the sacrum. To test this hypothesis, authors counted presacral vertebral columns of a variety of 802 individuals from 5 different Families, assigned a running classification speed to each species, and conducted statistical analyses based on these counts (described below). Results of the analysis support the hypothesis that developmental and biomechanical constraints limit mammalian presacral vertebrae evolution. Slow taxa were more likely to exhibit presacral variation.
 ###Problems I have with this paper:
 * Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (ie: canis and procyon)?
@@ -314,6 +315,7 @@ cd <- ci_var(C_d)
 ##Figure 4 reconstruction
 
 ###Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
+###Shows within species variation.  Fast mammals have lowest variation, slow mammals have highest variation.
 ```{r}
   
 #Creates a vector of the species names that will be included for the analysis of Figure 4.  These area the species that have variance in the number of presacral vertebrae.
@@ -364,11 +366,11 @@ View(employ) #opens data frame in new window
 
 limits <- aes(ymin= CI5, ymax = CI95) #assigns error bars based on the confidence intervals of each species
 
-figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + ylim(0, 1) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)")
+figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + ylim(0, 1) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)")
 figure4 #command to recreate the figure from the paper
 
 ```
-###My Figure 4 looks different from that published in the paper for a few reasons:
+###My Figure 4 looks different from that published in the paper for a few reasons: 
 * I excluded the species with no variance in their presacral counts
 * Due to the random nature of bootstrapping, the CIs may shift slightly when run
 * I used a completely different method for data transformation and random sampling than the authors
