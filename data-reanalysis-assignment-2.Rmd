@@ -379,8 +379,10 @@ limits <- aes(ymin= CI5, ymax = CI95) #assigns error bars based on the confidenc
 
 figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + ylim(0, 1) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)")
 figure4 #command to recreate the figure from the paper
-
 ```
+
+<img src="img/"C:\Users\Allison\Desktop\data_reconstruction_project\Galis2004img.jpg"" width="200px"/>
+
 ###My Figure 4 looks different from that published in the paper for a few reasons: 
 * I excluded the species with no variance in their presacral counts
 * Due to the random nature of bootstrapping, the CIs may shift slightly when run
