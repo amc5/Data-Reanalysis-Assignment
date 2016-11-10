@@ -182,7 +182,7 @@ figure4 #command to recreate the figure from the paper
 
 ###Original Figure 4 from article
 <img src="img/Gallis2004img.jpg" width="450px"/> 
-
+ 
 ###Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
 ###Shows within species variation.  Fast mammals have lowest variation, slow mammals have highest variation.
 ```{r}
