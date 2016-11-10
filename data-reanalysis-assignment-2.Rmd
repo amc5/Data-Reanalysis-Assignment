@@ -38,7 +38,7 @@ head(d) #checking data
 #d is the original species data set that I received from the author
 ```
 
-###This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent from each other.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
+###This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent of running speed.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
 
 ##My methods for running the Fisher's exact tests:
 * Create matrix of contingency table of count of normal vertebrae and abnormal vertebrae of each speed classification (whichever is called for for the specific test)
@@ -158,7 +158,7 @@ whole_thing <- function(df, n){ #this function will act on the specified datafra
   for(k in 1:length(species)){ 
     v <- NULL #Nulls out variable v each time the function is run for a different species
     s <- NULL #Nulls out variable s each time the function is run for a different species
-    singleSpdat <- df%>%filter(Species == species[k]) #this creates a mini data frame made up of the individual species being anaylyzed at a time that only contains the data on one species at a time
+    singleSpdat <- df%>%filter(Species == species[k]) #this creates a mini data frame made up of the individual species being anaylyzed at a time that only contains the data on one species at a time. The use of piping here allows me to list what I want done in an intuitive manner
     speed[k] <- singleSpdat$Running_Speed[1] #this creates a running speed column in the new data frame for the species being analyzed based on the running speed designated for the first individual in the species (all individuals in each species have the same running speed)
     number[k] <- nrow(singleSpdat) #this creates a column in the new dataframe that is the number of rows per species, or the number of observances per species
     for(i in 1:n){
@@ -179,6 +179,10 @@ View(finish) #allows me to see the new dataframe in a different window
 ###So:
 #### I started by doing the slow process of running a function that I had created that calculated the variance and confidence intervals of each vector that I ran through it. I then ran each vector (a vector of presacral counts for each species) through this function one at a time. However, everytime that I did this, the variance was changing a lot for each species (up to 0.2) each time the same vector was run through the same function. This did not make sense so I started from scratch again. I think that this was happening because of how I was having the old function print the variance. After running the function individually for each species, I created a figure by individually binding each column that I needed to create a dataframe. After accepting the realization that my numbers were wrong, I scrapped it and slowly built the above function.
 
+###The above function "whole_thing" is based directly on my previous function for variance and confidence intervals. I used the same commands and equations to get the variance and confidence intervals and for the random sampling. What I changed is where the data is pulled from (now from the author's data frame instead of from handmade individual vectors). What the function returns is also very different. It now returns a dataframe of all of the information that I need to create my graph in a new data frame. Before I had it returning individual vectors that I then used cbind to create a new data frame.
+*It is much easier now that I took the time to understand the use and process of function building to create one command that runs my entire data set, rather than created over 100 lines of code that do not return the correct inforamtion.
+*My figure now matches the original figure from the publication more closely, although there are a few discrepancies.
+
 ##Figure 4 Reconstruction
 
 ```{r}
@@ -196,7 +200,13 @@ figure4 #command to recreate the figure from the paper
 ###My Figure 4 looks different from that published in the paper for a few reasons:
 * The scale of my y-axis is a little bit different (ending at 0.8 instead of 1.0) because I wanted to focus in a little bit, since none of my confidence intervals exceed 0.8 (unlike the author's).
 * Bootstrapping confidence intervals of the mean of variances can provide slightly different numbers because it is randomly sampling 1000 times, a little bit of variation can be expected.
+* It appears that we have differences in the number of observances for a few species. I think that this is because I removed the rows with NAs in the presacral count column from my dataset. I think the authors kept these rows for the purpose of the count of observances, but did not use their information for the analysis of variances and confidence intervals. The counts are only off by 1, it appears.
+* My figure removed 14 species from the analysis because there was only one individual observed for that species. Therefore the variance and CIs returned for that individual were NA.
 
 ##Having evaluated this paper and reconstructed their data analysis, I would not have used the same statistical methods as the authors for the following reasons:
-* Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication.  
-* Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (ie: canis and procyon)?
+* Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication, this makes me question the validity of their data set and their data analysis
+* Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (eg: Canis and Procyon)?
+* I find it strange that they merely mention an additional statistical analysis in the methods, but never refer to it anywhere else in the paper or mention its results
+* In the information I received from the author, they ran a comparison of speed based on phylogeny. However, they do not mention this in the paper either, nor do they say where they got the data for that analysis.
+
+###References:
