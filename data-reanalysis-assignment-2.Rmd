@@ -39,11 +39,13 @@ head(d) #checking data
 ```
 
 ###This first chunk of code is running the Fisher's exact tests on Presacral number both within and between Families.  Fisher's exact tests are used to analyze categorical data within a contingency table (Crawley, 2015, page 104).  The null hypothesis of a Fisher's exact test is independence between variable proportions. In this data analysis, the categorical variables are normal number of presacral vertebrae and abnormal number of presacral vertebrae present in each family.  The null hypothesis is that the number of normal and abnormal vertebrae between taxa speeds are independent from each other.  Authors use "abnormal" presacral vertebrae to refer to individuals possessing nonmodal frequencies of vertebrae for their taxa, examples show this can be due to an asymmetric transitional lumbosacral vertebra or a missing lumbar vertebra due to sacralization.  Using a Fisher's exact test is relevant to this data analysis because it provides p-values describing whether or not speed designation of taxa is independent of presacral vertebrae.
+
 ##My methods for running the Fisher's exact tests:
 * Create matrix of contingency table of count of normal vertebrae and abnormal vertebrae of each speed classification (whichever is called for for the specific test)
 * Create the matrix by hand for each test because the Excel tables from the supplementary data only provided the raw genera data.  Therefore, the totals of normal and abnormal presacral vertebrae counts had to be tallied and entered by hand in R.
 * Run Fisher's exact test using built in R function fisher.test(x)
 * I provide the calculated p-value from my test, and then the author's reported p-value, when different, in parentheses next to it
+
 ```{r}
 #fast galloping vs fast half-bound Carnivora
 x <- as.matrix(c(270, 1, 96, 5)) 
@@ -88,6 +90,7 @@ fisher.test(x) #p=0.0001289 instead of 0.01
 ```
 
 ###Authors adjusted the p-values of the following comparisons using the Holm-Bonferroni adjustment. These are posthoc tests of the above comparison between four families (Carnivora, Artiodactyla, Afrotheria, and Monotremata).  The purpose of this posthoc comparison is to examine that specific experiment for relationships within the first analysis. A Holm-Bonferoni adjustment was used because adjusts the criteria for rejecting the null hypothesis, making it more difficult to get a Type I error (incorrect rejection of a true null hypothesis).
+
 ```{r}
 #Posthoc comparison of slow Carnivora vs slow Artiodactyla
 x <- as.matrix(c(38,  13, 68, 45))
@@ -125,10 +128,12 @@ dim(x) <- c(2,2)
 y<-fisher.test(x)
 p.adjust(y$p.value, method = "holm", n=6) #p=0.408, (0.54)
 ```
-###The authors reported six p-values as insignificant.  I calculated different p-values for each of these six insignificant, reported values.  My calculations result in the same p-values as being significant that they report.  I reached out to the first author, Galis, about the discrepancy between our results.  She did not comment on the p-values, but she did respond that the authors are continuing to accumulate more data and work with their data set.
+
+###The authors reported six p-values as insignificant.  I calculated different p-values for each of these six insignificant, reported values.  My calculations result in the same p-values as being significant that they report.  I reached out to the first author, Galis, about the discrepancy between our results.  She did not comment on the p-values, but she did respond that the authors are continuing to accumulate more data and work with their data set. She did not offer any information that helped me understand why our values might be different.
 ###The results of this test reveal if the differences between speeds of taxa are significant for frequency of abnormal presacral counts and/or the presence of presacral transitional vertebrae.
 
 #Working with species specific data for within-species variance comparison and bootstrapping
+
 ```{r} 
 #manipulate raw data to get rid of NAs in Presacral count column
 summary(d$Presacral.No.) #identifies how many rows contain NA for presacral count
@@ -138,10 +143,11 @@ summary(d$Presacral.No.)
 head(d)
 ```
 
-#Create functions for variance and confidence interval bootstrapping
-###Below I create a mega function thatI have heavily annotated to explain my step-by-step process
-```{r}
+#Create functions for variance and confidence interval bootstrapping (related to figure 4)
 
+###Below I create a mega function that I have heavily annotated to explain my step-by-step process
+
+```{r}
 whole_thing <- function(df, n){ #this function will act on the specified dataframe (will be d), n times (will be 1000)
   CI5 <- c() #creates empty vector for 5% CI that will get filled in at bottom of function depending on the results of the function
   CI95 <- c() #creates empty vector for 95% CI that will get filled in at bottom of function depending on the results of the function
@@ -170,8 +176,11 @@ finish <- whole_thing(d,1000) #telsl the function to run on the original ddatafr
 View(finish) #allows me to see the new dataframe in a different window
 ```
 #### I REALLY understand functions now!! :) 
+###So:
+#### I started by doing the slow process of running a function that I had created that calculated the variance and confidence intervals of each vector that I ran through it. I then ran each vector (a vector of presacral counts for each species) through this function one at a time. However, everytime that I did this, the variance was changing a lot for each species (up to 0.2) each time the same vector was run through the same function. This did not make sense so I started from scratch again. I think that this was happening because of how I was having the old function print the variance. After running the function individually for each species, I created a figure by individually binding each column that I needed to create a dataframe. After accepting the realization that my numbers were wrong, I scrapped it and slowly built the above function.
 
 ##Figure 4 Reconstruction
+
 ```{r}
 #I use ggplot to construct a graph comparing within species variance with number of observation per species, and then identifying the species based on running speed classification
 
@@ -182,74 +191,12 @@ figure4 #command to recreate the figure from the paper
 
 ###Original Figure 4 from article
 <img src="img/Gallis2004img.jpg" width="450px"/> 
+#####I am not sure if this will successfully load the image in my Rmd.
  
-###Recreating Figure 4 from the paper which plots within species variance and 95% confidence intervals based on number of observations per species, and also showing the designated speed classification per species.  For the purpose of my reanalysis, I only included animals with any intraspecific variation in presacral count.
-###Shows within species variation.  Fast mammals have lowest variation, slow mammals have highest variation.
-```{r}
-  
-#Creates a vector of the species names that will be included for the analysis of Figure 4.  These area the species that have variance in the number of presacral vertebrae.
-species <- c("aculeatus", "bruijni", "afer", "maximus", "africana", "serval", "meles", "nivalis", "erminea", "foina", "lotor", "cancrivorus", "porcus", "africanus", "scrofa", "amphibus", "liberiensis", "aquaticus", "kanchil", "javanicus", "tatarica", "moschatus", "dorsalis") #creates vector of species names that will be used in plot
-
-#creates vector of variances for each species
-variance <- (c(rT_a, rZ_b, rO_a, rE_m, rL_a, rL_s, rM_m, rM_n, rM_e, rM_f, rP_l, rP_c, rP_p, rP_a, rS_s, rH_a, rH_l, rHy_a, rT_k, rT_j, rS_t, rO_m, rC_d)) 
-
-#binds the confidence intervals of each species together as columns
-binding <- function(x) { 
-  cbind2(x[1], x[2])
-}
-
-#Creates a vector of the 5% and 95% confidence intervals for variance per species
-ci <- c(binding(ta), binding(zb), binding(oa), binding(em), binding(la), binding(ls), binding(mm), binding(mn), binding(me), binding(mf), binding(pl), binding(pc), binding(pp), binding(pa), binding(ss), binding(ha), binding(hl), binding(hya), binding(tk), binding(tj), binding(st), binding(om), binding(cd)) 
-ci
-
-#assign variables to code for each running speed, then create a vector that assigns a value to each species
-s<- "slow"
-f<- "fast"
-hb <- "fast half-bounding"
-speed <- c(s, s, s, s, s, f, s, hb, hb, hb, hb, s, s, s, s, s, s, s, s, s, f, s, s)
-speed
-
-#create vector of number of observations per species
-numobs <- c(length(T_a), length(Z_b), length(O_a), length(E_m), length(L_a), length(L_s), length(M_m), length(M_n), length(M_e), length(M_f), length(P_l), length(P_c), length(P_p), length(P_a), length(S_s), length(H_a), length(H_l), length(Hy_a), length(T_k), length(T_j), length(S_t), length(O_m), length(C_d))
-
-#check to make sure that all of my vectors are the same length and can be combined into a data frame
-length(speed) 
-length(species)
-length(variance)
-
-#Creates data frame with Species name, variance of each species' presacral count, speed rank of each species, number of observations per species, and 5% and 95% confidence intervals for each species
-employ <- data.frame(species, variance, speed, numobs)
-employ5 <- c()
-employ95 <- c()
-
-#assigns confidence interval values to variables
-for (i in 1:length(ci)){ 
-  employ5[i]<- ci[2*i-1] 
-  employ95[i] <- ci[2*i]
-}
-
-employ$CI5 <- employ5[1:23] #adds columns for 5 and 95 % confidence intervals to the data frame
-employ$CI95 <- employ95[1:23]
-employ #final data frame to create graph
-View(employ) #opens data frame in new window
-
-limits <- aes(ymin= CI5, ymax = CI95) #assigns error bars based on the confidence intervals of each species
-
-figure4 <- ggplot(data = employ, aes(x=numobs, y=variance, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + geom_pointrange(limits) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)") + scale_y_continuous(breaks=c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
-figure4
-```
-
-
-
-###My Figure 4 looks different from that published in the paper for a few reasons: 
-* I excluded the species with no variance in their presacral counts
-* My x-axis only goes to right above 35 because, with excluding the 0 variance species, none of my counts exceed 35
-* The scale of my y-axis is a little bit different (ending at 0.8 instead of 1.0) because I wanted to focus in a little bit, since none of my confidence intervals exceed 0.8 (unlike the author's) 
-* Due to the random nature of bootstrapping, the CIs may shift slightly when run
-* I used a completely different method for data transformation and random sampling than the authors
-* Although I only included species in my analysis that have variation in their presacral vertebrae count, 3 species on my plot appear to have variance=0.  This is due to the bootstrapping and 1000 times sampling randomization.
+###My Figure 4 looks different from that published in the paper for a few reasons:
+* The scale of my y-axis is a little bit different (ending at 0.8 instead of 1.0) because I wanted to focus in a little bit, since none of my confidence intervals exceed 0.8 (unlike the author's).
+* Bootstrapping confidence intervals of the mean of variances can provide slightly different numbers because it is randomly sampling 1000 times, a little bit of variation can be expected.
 
 ##Having evaluated this paper and reconstructed their data analysis, I would not have used the same statistical methods as the authors for the following reasons:
-* Bootstrapping is by definition according to Crowley (page 62) a resampling of the mean.  Yet the authors specify that they do this of the variance.  I realize that they use bootstrapping because their sample sizes are small (between 1 and 40), but it seems to me that they could have a) aimed for a higher number of measurements, b) used counts and measurements from different data sources, or c) simply reported what they had.
 * Upon contacting the first author of this paper, she immediately expressed regrets that she had about the data in the publication.  
 * Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (ie: canis and procyon)?
