@@ -175,7 +175,7 @@ View(finish) #allows me to see the new dataframe in a different window
 ```{r}
 #I use ggplot to construct a graph comparing within species variance with number of observation per species, and then identifying the species based on running speed classification
 
-figure4 <- ggplot(data = finish, aes(x=number, y=var, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + geom_pointrange(aes(ymin=CI5, ymax=CI95)) + ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)") + scale_y_continuous(breaks=c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+figure4 <- ggplot(data = finish, aes(x=number, y=var, color=speed)) + geom_point() + scale_color_manual(name = c("slow", "fast-half bound", "fast"), values = c("blue", "black", "red")) + geom_pointrange(aes(ymin=CI5, ymax=CI95)) +  ggtitle("Figure 4: Within-Species Variance") + xlab("Number of observations per species") + ylab("Variance of presacral count (with 95%CI)") + scale_y_continuous(breaks=c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
 figure4 #command to recreate the figure from the paper
 #14 removed because they have NA for var and CI cuz 1 observation
 ```
