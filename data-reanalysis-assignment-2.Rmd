@@ -154,13 +154,13 @@ whole_thing <- function(df, n){ #this function will act on the specified datafra
   var <- c() #creates empty vector for variance that will get filled in at bottom of function depending on results of the function
   number <- c() #creates empty vector for number of observations that will get filled in at bottom of function depending on the species analyzed
   speed <- c() #creates empty vector for speed classification (slow, half, or fast depending on author's designation in original dataframe) that will get filled in at bottom of function depending on the species
-  species <- unique(df$Species) #This splits up the original dataframe by pulling each species by name "Species" only once
+  species <- unique(df$Species) #creates vector containing each species name one time that will be used to split data later
   for(k in 1:length(species)){ 
     v <- NULL #Nulls out variable v each time the function is run for a different species
     s <- NULL #Nulls out variable s each time the function is run for a different species
     singleSpdat <- df%>%filter(Species == species[k]) #this creates a mini data frame made up of the individual species being anaylyzed at a time that only contains the data on one species at a time. The use of piping here allows me to list what I want done in an intuitive manner
-    speed[k] <- singleSpdat$Running_Speed[1] #this creates a running speed column in the new data frame for the species being analyzed based on the running speed designated for the first individual in the species (all individuals in each species have the same running speed)
-    number[k] <- nrow(singleSpdat) #this creates a column in the new dataframe that is the number of rows per species, or the number of observances per species
+    speed[k] <- singleSpdat$Running_Speed[1] #this pulls the speed for each species and adds it to the speed vector created above that will get built in to the new data frame at the end.  This tells it to pull the first speed value from each species
+    number[k] <- nrow(singleSpdat) #this pulls the number of rows for each species within the singleSdat, which is only made up of the species being analyzed at the time
     for(i in 1:n){
          s <-sample(singleSpdat$Presacral.No., nrow(singleSpdat), replace = TRUE) #creates variable for the random sampling of each species' presacral vertebrae data, it samples from the number of observances for each species, with replacement so that each value is put back in the bin for each sampling event 
          v[i] <- sum((s - mean(s, na.rm=T))^2)/(length(s) - 1) #equation to calculate the variance of the random sampling of each species' presacral vertebral column count
@@ -177,11 +177,12 @@ View(finish) #allows me to see the new dataframe in a different window
 ```
 #### I REALLY understand functions now!! :) 
 ###So:
-#### I started by doing the slow process of running a function that I had created that calculated the variance and confidence intervals of each vector that I ran through it. I then ran each vector (a vector of presacral counts for each species) through this function one at a time. However, everytime that I did this, the variance was changing a lot for each species (up to 0.2) each time the same vector was run through the same function. This did not make sense so I started from scratch again. I think that this was happening because of how I was having the old function print the variance. After running the function individually for each species, I created a figure by individually binding each column that I needed to create a dataframe. After accepting the realization that my numbers were wrong, I scrapped it and slowly built the above function.
+#### I started by doing the slow process of running a function that I had created that calculated the variance and confidence intervals of each vector that I ran through it. I then ran each vector (a vector of presacral counts for each species) through this function one at a time. However, everytime that I did this, the variance was changing a lot for each species (up to 0.2) each time the same vector was run through the same function.  After running the function individually for each species, I created a figure by individually binding each column that I needed to create a dataframe. After accepting the realization that my numbers were wrong, I scrapped it and slowly built the above function. This did not make sense so I started from scratch again.
 
 ###The above function "whole_thing" is based directly on my previous function for variance and confidence intervals. I used the same commands and equations to get the variance and confidence intervals and for the random sampling. What I changed is where the data is pulled from (now from the author's data frame instead of from handmade individual vectors). What the function returns is also very different. It now returns a dataframe of all of the information that I need to create my graph in a new data frame. Before I had it returning individual vectors that I then used cbind to create a new data frame.
-*It is much easier now that I took the time to understand the use and process of function building to create one command that runs my entire data set, rather than created over 100 lines of code that do not return the correct inforamtion.
-*My figure now matches the original figure from the publication more closely, although there are a few discrepancies.
+* It is very satisfying to be able to create one single function for everything that I need to do.
+* It is much easier now that I took the time to understand the use and process of function building to create one command that runs my entire data set, rather than created over 100 lines of code that do not return the correct inforamtion.
+* My figure now matches the original figure from the publication more closely, although there are a few discrepancies.
 
 ##Figure 4 Reconstruction
 
@@ -210,3 +211,4 @@ figure4 #command to recreate the figure from the paper
 * In the information I received from the author, they ran a comparison of speed based on phylogeny. However, they do not mention this in the paper either, nor do they say where they got the data for that analysis.
 
 ###References:
+* Crawley, M. J. (2014). Statistics: An Introduction Using R (Second Edition). Chichester, UK: John Wiley & Sons, Inc.
