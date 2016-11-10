@@ -166,7 +166,7 @@ whole_thing <- function(df, n){ #this function will act on the specified datafra
          v[i] <- sum((s - mean(s, na.rm=T))^2)/(length(s) - 1) #equation to calculate the variance of the random sampling of each species' presacral vertebral column count
     }
     var[k] <- mean(v) #creates a single variance for each species based on the mean of the sample of variances
-    q <- quantile(v, c(0.05, 0.95), na.rm=TRUE) #creates 95% confidence intervals for each variance
+    q <- quantile(v, c(0.25, 0.975), na.rm=TRUE) #creates 95% confidence intervals for each variance
     CI5[k] <- q[1] #creates a column out of the first value in q (which is the 5% CI)
     CI95[k] <- q[2] #creates a column out of the first value in q (which is the 95% CI)
   }
@@ -209,6 +209,8 @@ figure4 #command to recreate the figure from the paper
 * Galis et al. state that body size is less of a factor compared to stiffness, though they do not test for this, nor hold it constant. They simply state that there is no difference in big vs small and use elephants in comparison to mouse deer as an example.  What about between animals that are similar in size but run at different speeds (eg: Canis and Procyon)?
 * I find it strange that they merely mention an additional statistical analysis in the methods, but never refer to it anywhere else in the paper or mention its results
 * In the information I received from the author, they ran a comparison of speed based on phylogeny. However, they do not mention this in the paper either, nor do they say where they got the data for that analysis.
+
+
 
 ###References:
 * Crawley, M. J. (2014). Statistics: An Introduction Using R (Second Edition). Chichester, UK: John Wiley & Sons, Inc.
